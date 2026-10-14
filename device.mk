@@ -62,7 +62,6 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    batterytemp.sh \
     init.insmod.sh \
 
 PRODUCT_PACKAGES += \
