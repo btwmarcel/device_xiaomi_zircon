@@ -4,11 +4,6 @@
 //
 
 // Init scripts
-sh_binary {
-    name: "batterytemp.sh",
-    src: "bin/batterytemp.sh",
-    vendor: true,
-}
 
 sh_binary {
     name: "init.insmod.sh",
