@@ -62,5 +62,3 @@ ro.nnapi.extensions.deny_on_product=true
 ro.rom.zone=2
 ro.secureboot.devicelock=1
 ro.support_one_handed_mode=true
-ro.system_ext.build.version.sdk_full=36.0
-
