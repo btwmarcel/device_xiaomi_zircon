@@ -1997,7 +1997,6 @@ vendor/bin/crossbuild/DataSet/SQLiteModule/db/ParameterDB.db
 vendor/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db
 vendor/bin/crossbuild/DataSet/SQLiteModule/db/sw_top_control_data.db
 vendor/bin/crossbuild/DataSet/SQLiteModule/db/top_control_data.db
-vendor/bin/hw/vendor.mediatek.hardware.aee@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.gnss.batching-service
 vendor/bin/hw/vendor.mediatek.hardware.mmlpq@V1-service
 vendor/bin/hw/vendor.xiaomi.hardware.cld@1.0-service
@@ -2015,12 +2014,7 @@ vendor/bin/AgentTest
 vendor/bin/DFtool
 vendor/bin/MI_IC
 vendor/bin/MI_RIC
-vendor/bin/aee_aedv64_v2
-vendor/bin/aee_dumpstatev_v2
-vendor/bin/aeev_v2
-vendor/bin/atcid
 vendor/bin/ated
-vendor/bin/audiocmdservice_atci
 vendor/bin/autobt
 vendor/bin/bip_ap
 vendor/bin/bt_dump
@@ -2033,7 +2027,6 @@ vendor/bin/dconfig
 vendor/bin/ddr_freq
 vendor/bin/dexecutor
 vendor/bin/displayfeature
-vendor/bin/dmc_core
 vendor/bin/doeapp-memtester
 vendor/bin/doeapp-sat
 vendor/bin/dtc_vendor
@@ -2054,10 +2047,7 @@ vendor/bin/iwlist
 vendor/bin/iwpriv
 vendor/bin/jpegtool
 vendor/bin/lbs_hidl_service
-vendor/bin/loghidlvendorservice
 vendor/bin/mcfota_service
-vendor/bin/md_monitor
-vendor/bin/md_monitor_ctrl
 vendor/bin/meta_tst
 vendor/bin/minetd
 vendor/bin/mitee_info
@@ -2104,13 +2094,9 @@ vendor/etc/gralloc/dpu.xml
 vendor/etc/gralloc/dpu_aeu.xml
 vendor/etc/gralloc/gpu.xml
 vendor/etc/gralloc/vpu.xml
-vendor/etc/init/aee_aedv64_v2.rc
-vendor/etc/init/atcid.rc
-vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/init/bootperf.rc
 vendor/etc/init/ddr_freq.rc
 vendor/etc/init/ddr_training.rc
-vendor/etc/init/dmc_core.rc
 vendor/etc/init/dumpstate-xiaomi.rc
 vendor/etc/init/eara-io-service.rc
 vendor/etc/init/em_hal_user.rc
@@ -2133,7 +2119,6 @@ vendor/etc/init/init.thermal_core.rc
 vendor/etc/init/init.vendor.ins.rc
 vendor/etc/init/lbs_hidl_service.rc
 vendor/etc/init/lights-mtk-default.rc
-vendor/etc/init/loghidlvendorservice.rc
 vendor/etc/init/mcfota_service.rc
 vendor/etc/init/md_monitor.rc
 vendor/etc/init/mi_ic.rc
@@ -2150,7 +2135,6 @@ vendor/etc/init/networksetting.rc
 vendor/etc/init/slad.rc
 vendor/etc/init/tee-supplicant.rc
 vendor/etc/init/touch_boost.rc
-vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.cld@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.mimd@1.0-service.rc
@@ -2405,8 +2389,6 @@ vendor/etc/AudioDump_dynamic.xml
 vendor/etc/AudioLog_dynamic.xml
 vendor/etc/MNL_Config.xml
 vendor/etc/VideoLog_dynamic.xml
-vendor/etc/aee-commit
-vendor/etc/aee-config
 vendor/etc/audio_device.xml
 vendor/etc/audio_em.xml
 vendor/etc/audio_policy.conf
@@ -3012,8 +2994,6 @@ vendor/lib64/mtk000_mipi_raw_tuning.so
 vendor/lib64/pangu_decouple_phony.so
 vendor/lib64/se_nq_extn_client.so
 vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk.so
-vendor/lib64/vendor.mediatek.hardware.aee@1.0.so
-vendor/lib64/vendor.mediatek.hardware.aee@1.1.so
 vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.apusys-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
