@@ -20,6 +20,7 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/xiaomi/zircon',
+    'hardware/mediatek'
 ]
 
 blob_fixups: blob_fixups_user_type = {
