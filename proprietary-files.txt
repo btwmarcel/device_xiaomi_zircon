@@ -1245,7 +1245,6 @@ vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/lib/libcamera2ndk_vendor.so
-vendor/lib/libcodec2_hidl_plugin.so
 vendor/lib/libcodec2_mtk_c2store.so
 vendor/lib/libcodec2_mtk_vdec.so
 vendor/lib/libcodec2_mtk_venc.so
@@ -1262,7 +1261,6 @@ vendor/lib/libmtkperf_client_vendor.so
 vendor/lib/libstagefright_softomx_plugin.so
 vendor/lib/libvcodec_oal.so
 vendor/lib64/libcamera2ndk_vendor.so
-vendor/lib64/libcodec2_hidl_plugin.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
