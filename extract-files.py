@@ -58,6 +58,16 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .replace_needed('android.hardware.graphics.common-V6-ndk.so',
                         'android.hardware.graphics.common-V7-ndk.so'),
+
+    (
+        'vendor/lib64/libmialgoengine.so'
+    ): blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
+
+    (
+        'vendor/lib64/libnvram.so'
+    ): blob_fixup()
+        .add_needed('libbase_shim.so')
 }
 
 module = ExtractUtilsModule(
