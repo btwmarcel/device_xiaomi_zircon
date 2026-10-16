@@ -8,7 +8,6 @@ vendor/lib/hw/audio.r_submix.default.so
 vendor/lib/hw/audio.r_submix.mediatek.so
 vendor/lib/hw/audio.r_submix.mt6886.so
 vendor/lib/hw/audio.usb.default.so
-vendor/lib/libaedv.so
 vendor/lib/libaudiocloudctrl.so
 vendor/lib/libaudiodatabase.so
 vendor/lib/libaudiotoolkit_vendor.so
@@ -28,7 +27,6 @@ vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.r_submix.mediatek.so
 vendor/lib64/hw/audio.r_submix.mt6886.so
 vendor/lib64/hw/audio.usb.default.so
-vendor/lib64/libaedv.so
 vendor/lib64/libaudiocloudctrl.so
 vendor/lib64/libaudiodatabase.so
 vendor/lib64/libaudiotoolkit_vendor.so
