@@ -2051,7 +2051,6 @@ vendor/bin/bt_dump
 vendor/bin/cameratest
 vendor/bin/camsys_dump_tool
 vendor/bin/charge_logger
-vendor/bin/chipinfo
 vendor/bin/conninfra_loader
 vendor/bin/dc_cal
 vendor/bin/dconfig
@@ -2133,7 +2132,6 @@ vendor/etc/init/aee_aedv64_v2.rc
 vendor/etc/init/atcid.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/init/bootperf.rc
-vendor/etc/init/chipinfo_init.rc
 vendor/etc/init/ddr_freq.rc
 vendor/etc/init/ddr_training.rc
 vendor/etc/init/dmc_core.rc
