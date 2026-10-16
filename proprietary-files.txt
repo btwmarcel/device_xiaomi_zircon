@@ -969,7 +969,6 @@ vendor/bin/hw/android.hardware.graphics.composer@2.1-service
 vendor/bin/hw/android.hardware.graphics.composer@2.3-service
 vendor/bin/hw/android.hardware.graphics.composer@2.4-service
 vendor/bin/hw/android.hardware.graphics.composer@3.1-service
-vendor/bin/hw/android.hardware.memtrack-service.mediatek
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.7-service
 vendor/bin/hw/vendor.mediatek.hardware.pq_aidl-service
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
@@ -2158,7 +2157,6 @@ vendor/etc/init/lights-mtk-default.rc
 vendor/etc/init/loghidlvendorservice.rc
 vendor/etc/init/mcfota_service.rc
 vendor/etc/init/md_monitor.rc
-vendor/etc/init/memtrack-mediatek.rc
 vendor/etc/init/mi_ic.rc
 vendor/etc/init/mi_ric.rc
 vendor/etc/init/minetd.rc
@@ -2410,7 +2408,6 @@ vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
 vendor/etc/vintf/manifest/manifest_mmlpq.xml
 vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.cld.xml
 vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.otrpagent@2.0.xml
-vendor/etc/vintf/manifest/memtrack-mediatek.xml
 vendor/etc/vintf/manifest/mtkgnss-batching.xml
 vendor/etc/vintf/manifest/mtkpower_applist-mtk-default.xml
 vendor/etc/vintf/manifest/power-mediatek.xml
