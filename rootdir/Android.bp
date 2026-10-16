@@ -104,13 +104,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.mt6886.usb.rc",
-    src: "etc/init.mt6886.usb.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.mtkgki.rc",
     src: "etc/init.mtkgki.rc",
     sub_dir: "init/hw",

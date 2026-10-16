@@ -77,7 +77,6 @@ PRODUCT_PACKAGES += \
     init.mi_thermald.rc \
     init.modem.rc \
     init.mt6886.rc \
-    init.mt6886.usb.rc \
     init.mtkgki.rc \
     init.project.rc \
     init.sensor_2_0.rc \

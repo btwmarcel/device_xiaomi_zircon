@@ -1,7 +1,6 @@
 # MTK platform .rc configure
 
 import ${ro.vendor.rc}init.connectivity.rc
-import ${ro.vendor.rc}init.mt6886.usb.rc
 import /vendor/etc/init/hw/init.project.rc
 import /system_ext/etc/init/hw/init.aee.rc
 import /FWUpgradeInit.rc
