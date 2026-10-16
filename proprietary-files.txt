@@ -12,7 +12,6 @@ vendor/lib/libaudiocloudctrl.so
 vendor/lib/libaudiodatabase.so
 vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib/libbwc.so
-vendor/lib/libladder.so
 vendor/lib/libmispowerop.so
 vendor/lib/libxlog.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
@@ -31,7 +30,6 @@ vendor/lib64/libaudiocloudctrl.so
 vendor/lib64/libaudiodatabase.so
 vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libbwc.so
-vendor/lib64/libladder.so
 vendor/lib64/libmispowerop.so
 vendor/lib64/libxlog.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
