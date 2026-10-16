@@ -221,14 +221,6 @@ vendor/lib64/libbt-vendor.so
 vendor/lib64/libnvram.so
 vendor/lib64/libnvram_sec.so
 
-# Bluetooth (A2DP)
-vendor/lib/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so
-vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
-vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so
-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
-
 # Camera
 odm/lib64/libarcsoft_high_dynamic_range.so
 odm/lib64/libarcsoft_low_light_hdr.so
@@ -1406,10 +1398,7 @@ odm/lib64/vendor.xiaomi.hardware.tidaservice@1.1.so
 odm/lib64/vendor.xiaomi.hardware.tidaservice@1.2.so
 
 # Power
-system_ext/lib/vendor.mediatek.hardware.mtkpower-V2-ndk.so
 system_ext/lib/vendor.mediatek.hardware.mtkpower-V3-ndk.so
-system_ext/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so
-system_ext/lib64/vendor.mediatek.hardware.mtkpower-V2-ndk.so
 system_ext/lib64/vendor.mediatek.hardware.mtkpower-V3-ndk.so
 vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.mtkpower_applist-service.mediatek
@@ -1418,16 +1407,10 @@ vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 vendor/lib/hw/power.default.so
 vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
 vendor/lib/libpower_timer.so
-vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so
-vendor/lib/vendor.mediatek.hardware.mtkpower@1.1.so
-vendor/lib/vendor.mediatek.hardware.mtkpower@1.2.so
 vendor/lib/vendor.mediatek.hardware.mtkpower_applist-V1-ndk.so
 vendor/lib64/hw/power.default.so
 vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
 vendor/lib64/libpower_timer.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower@1.0.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower@1.1.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower@1.2.so
 vendor/lib64/vendor.mediatek.hardware.mtkpower_applist-V1-ndk.so
 
 # Radio
