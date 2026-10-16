@@ -2647,7 +2647,7 @@ vendor/lib/libmigpese@1.0.so
 vendor/lib/libminiui.so
 vendor/lib/libmisight.so
 vendor/lib/libmisound.so
-vendor/lib/libmisoundcrossfade.so
+vendor/lib/libmisoundcrossfade.so;FIX_SONAME
 vendor/lib/libmisoundkaraoke.so
 vendor/lib/libmmlpqImpl.so
 vendor/lib/libmmprofile.so
@@ -2894,7 +2894,7 @@ vendor/lib64/libmigpese@1.0.so
 vendor/lib64/libminiui.so
 vendor/lib64/libmisight.so
 vendor/lib64/libmisound.so
-vendor/lib64/libmisoundcrossfade.so
+vendor/lib64/libmisoundcrossfade.so;FIX_SONAME
 vendor/lib64/libmisoundkaraoke.so
 vendor/lib64/libmmlpqImpl.so
 vendor/lib64/libmmprofile.so
