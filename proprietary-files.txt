@@ -866,7 +866,8 @@ vendor/etc/camera/dualcam_bokeh_params_mono.json
 vendor/etc/camera/dualcam_preview_quan8_enc250.dlc
 vendor/etc/camera/ellv.bin
 vendor/etc/camera/ellv_params.xml
-vendor/etc/camera/gma_custom.xml
+# without this xmllint fails
+vendor/etc/camera/gma_custom.xml:vendor/etc/camera/gma_custom.txt;SYMLINK=vendor/etc/camera/gma_custom.xml
 vendor/etc/camera/libarcsoft_high_dynamic_range.bin
 vendor/etc/camera/libarcsoft_super_night_raw.bin
 vendor/etc/camera/libarcsoft_super_night_raw_front.bin
@@ -2120,7 +2121,6 @@ vendor/etc/init/init.vendor.ins.rc
 vendor/etc/init/lbs_hidl_service.rc
 vendor/etc/init/lights-mtk-default.rc
 vendor/etc/init/mcfota_service.rc
-vendor/etc/init/md_monitor.rc
 vendor/etc/init/mi_ic.rc
 vendor/etc/init/mi_ric.rc
 vendor/etc/init/minetd.rc
