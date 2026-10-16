@@ -703,3 +703,7 @@ vendor.mtk.camera.app.fd.video=1
 vendor.mtk.vdec.decode.error.handle.mode=1
 vendor.mtk.vdec.waitkeyframeforplay=9
 
+# USB
+
+vendor.usb.controller=11201000.usb0
+vendor.usb.vid=0x2717
