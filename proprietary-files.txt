@@ -2,11 +2,9 @@
 
 # Audio
 vendor/lib/hw/audio.primary.default.so
-vendor/lib/hw/audio.primary.mediatek.so
-vendor/lib/hw/audio.primary.mt6886.so
+vendor/lib/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib/hw/audio.primary.mt6886.so
 vendor/lib/hw/audio.r_submix.default.so
-vendor/lib/hw/audio.r_submix.mediatek.so
-vendor/lib/hw/audio.r_submix.mt6886.so
+vendor/lib/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib/hw/audio.r_submix.mt6886.so
 vendor/lib/hw/audio.usb.default.so
 vendor/lib/libaudiocloudctrl.so
 vendor/lib/libaudiodatabase.so
@@ -20,11 +18,9 @@ vendor/lib/vendor.mediatek.hardware.audio@8.1.so
 vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so
 vendor/lib64/hw/android.hardware.audio.effect@7.0-impl.so
 vendor/lib64/hw/audio.primary.default.so
-vendor/lib64/hw/audio.primary.mediatek.so
-vendor/lib64/hw/audio.primary.mt6886.so
+vendor/lib64/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib64/hw/audio.primary.mt6886.so
 vendor/lib64/hw/audio.r_submix.default.so
-vendor/lib64/hw/audio.r_submix.mediatek.so
-vendor/lib64/hw/audio.r_submix.mt6886.so
+vendor/lib64/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib64/hw/audio.r_submix.mt6886.so
 vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/libaudiocloudctrl.so
 vendor/lib64/libaudiodatabase.so
@@ -1148,13 +1144,11 @@ vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
-vendor/lib/hw/gatekeeper.default.so
 vendor/lib/hw/gatekeeper.mitee.so
-vendor/lib/hw/libSoftGatekeeper.so
+vendor/lib/hw/libSoftGatekeeper.so;SYMLINK=vendor/lib/hw/gatekeeper.default.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
-vendor/lib64/hw/gatekeeper.default.so
 vendor/lib64/hw/gatekeeper.mitee.so
-vendor/lib64/hw/libSoftGatekeeper.so
+vendor/lib64/hw/libSoftGatekeeper.so;SYMLINK=vendor/lib64/hw/gatekeeper.default.so
 
 # GNSS
 vendor/bin/hw/android.hardware.gnss-service.mediatek
@@ -1165,11 +1159,13 @@ vendor/etc/init/mtk_agpsd_p.rc
 vendor/lib/hw/gps.default.so
 vendor/lib/libDR.so
 vendor/lib/libmtkrillog.so
+vendor/lib/libmnl.so:vendor/lib/libmnl-mtk.so;FIX_SONAME
 vendor/lib64/hw/gps.default.so
 vendor/lib64/libDR.so
 vendor/lib64/libmipc.so
 vendor/lib64/libmtkrillog.so
 vendor/lib64/libtrm.so
+vendor/lib64/libmnl.so:vendor/lib64/libmnl-mtk.so;FIX_SONAME
 
 # GNSS configs
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
@@ -1399,20 +1395,10 @@ odm/lib64/vendor.xiaomi.hardware.tidaservice@1.1.so
 odm/lib64/vendor.xiaomi.hardware.tidaservice@1.2.so
 
 # Power
-system_ext/lib/vendor.mediatek.hardware.mtkpower-V3-ndk.so
-system_ext/lib64/vendor.mediatek.hardware.mtkpower-V3-ndk.so
-vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
-vendor/bin/hw/vendor.mediatek.hardware.mtkpower_applist-service.mediatek
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 vendor/lib/hw/power.default.so
-vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
 vendor/lib/libpower_timer.so
-vendor/lib/vendor.mediatek.hardware.mtkpower_applist-V1-ndk.so
 vendor/lib64/hw/power.default.so
-vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
 vendor/lib64/libpower_timer.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower_applist-V1-ndk.so
 
 # Radio
 system_ext/lib/vendor.mediatek.hardware.mtkradioex@3.0.so
@@ -1503,15 +1489,17 @@ vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.mitee.x
 vendor/lib/hw/sensors.dynamic_sensor_hal.so
 vendor/lib/hw/sensors.elliptic@2.0.so
 vendor/lib/libhidparser.so
-vendor/lib/libnotifyaudiohal.so
+vendor/lib/libnotifyaudiohal.so;FIX_SONAME
 vendor/lib/sensors.touch.detect.so
 vendor/lib64/hw/sensors.dynamic_sensor_hal.so
 vendor/lib64/hw/sensors.elliptic@2.0.so
-vendor/lib64/hw/sensors.mediatek.V2.0.so
-vendor/lib64/hw/sensors.mt6886.so
+vendor/lib64/hw/sensors.mediatek.V2.0.so;SYMLINK=vendor/lib64/hw/sensors.mt6886.so
+# stock symlinks sensors.mt6886.so to sensors.mediatek.V2.0.so but extract-utils copies the file
+# and keeps the target's soname. when check_elf_file runs, it sees the soname mismatch and errors out
+# vendor/lib64/hw/sensors.mt6886.so
 vendor/lib64/libhidparser.so
 vendor/lib64/libksensor.so
-vendor/lib64/libnotifyaudiohal.so
+vendor/lib64/libnotifyaudiohal.so;FIX_SONAME
 vendor/lib64/sensors.touch.detect.so
 
 # Sensors configs
@@ -1589,11 +1577,8 @@ vendor/etc/thermal-map.conf
 vendor/etc/thermald-devices.conf
 
 # USB
-vendor/bin/hw/android.hardware.usb-aidl-service.mediatekv1.0
 vendor/bin/hw/android.hardware.usb.gadget-service.mediatekv1.1
-vendor/etc/init/android.hardware.usb-aidl-service.mediatek.rc
 vendor/etc/init/android.hardware.usb.gadget-service.mediatek.rc
-vendor/etc/vintf/manifest/android.hardware.usb-aidl-service.mediatek.xml
 vendor/etc/vintf/manifest/android.hardware.usb.gadget-service.mediatek.xml
 
 # Vibrator
@@ -2040,7 +2025,6 @@ vendor/bin/frs
 vendor/bin/frs_intf
 vendor/bin/gbe
 vendor/bin/gps_dump
-vendor/bin/ioprofiler
 vendor/bin/iperf
 vendor/bin/iw-vendor
 vendor/bin/iwconfig
@@ -2068,7 +2052,6 @@ vendor/bin/pnscr-mi
 vendor/bin/pnscr-rf
 vendor/bin/rcs_volte_stack64
 vendor/bin/rt5512_calibration
-vendor/bin/rttv_v2
 vendor/bin/slad
 vendor/bin/smartpa_nvtest
 vendor/bin/stp_dump3
@@ -2126,7 +2109,6 @@ vendor/etc/init/minetd.rc
 vendor/etc/init/miteelog.rc
 vendor/etc/init/mtkgnss-batching.rc
 vendor/etc/init/mtklog.rc
-vendor/etc/init/mtkpower_applist-mtk-default.rc
 vendor/etc/init/muxreport.rc
 vendor/etc/init/netdagent.rc
 vendor/etc/init/networksetting.rc
@@ -2370,7 +2352,6 @@ vendor/etc/vintf/manifest/manifest_mmlpq.xml
 vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.cld.xml
 vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.otrpagent@2.0.xml
 vendor/etc/vintf/manifest/mtkgnss-batching.xml
-vendor/etc/vintf/manifest/mtkpower_applist-mtk-default.xml
 vendor/etc/vintf/manifest/power-mediatek.xml
 vendor/etc/vintf/manifest/vendor.mediatek.hardware.neuropilot.agent@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.bgservice@1.0-service.xml
@@ -2549,7 +2530,6 @@ vendor/lib/libADCSwitch.so
 vendor/lib/libMtkSpeechEnh.so
 vendor/lib/libTEECommon.so
 vendor/lib/lib_iir.so
-vendor/lib/lib_power_applist.so
 vendor/lib/libaal_cust.so
 vendor/lib/libaal_cust_func.so
 vendor/lib/libaal_key.so
@@ -2681,14 +2661,12 @@ vendor/lib/libneuron_adapter_mgvi.so
 vendor/lib/libneuron_graph_delegate.mtk.so
 vendor/lib/libneuropilot_hal_utils.so
 vendor/lib/libnir_neon_driver.so
-vendor/lib/libnir_neon_driver_ndk.mtk.vndk.so
+vendor/lib/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
 vendor/lib/libnlcparser.so
 vendor/lib/libnpagent.so
 vendor/lib/libnwk_opt_halwrap_vendor.so
 vendor/lib/libnxp_extamp_intf.so
 vendor/lib/libperfctl_vendor.so
-vendor/lib/libpowerhal.so
-vendor/lib/libpowerhalwrap_vendor.so
 vendor/lib/libpq_cust_base.so
 vendor/lib/librcs_interface.so
 vendor/lib/librgbwlightsensor.so
@@ -2698,7 +2676,7 @@ vendor/lib/libscltm.so
 vendor/lib/libsimlock.so
 vendor/lib/libsimmelock.so
 vendor/lib/libsn100u_fw.so
-vendor/lib/libspeech_enh_lib.so
+vendor/lib/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib/libspeechparser_vendor.so
 vendor/lib/libtflite_mtk.so
 vendor/lib/libthha.so
@@ -2777,7 +2755,6 @@ vendor/lib64/lib_eara_io_timer.so
 vendor/lib64/lib_eara_io_util.so
 vendor/lib64/lib_iir.so
 vendor/lib64/lib_misound_asc.so
-vendor/lib64/lib_power_applist.so
 vendor/lib64/libaal_cust.so
 vendor/lib64/libaal_cust_func.so
 vendor/lib64/libaal_key.so
@@ -2931,11 +2908,11 @@ vendor/lib64/libneuroeara.so
 vendor/lib64/libneuron_adapter_mgvi.so
 vendor/lib64/libneuron_graph_delegate.mtk.so
 vendor/lib64/libneuron_platform.so
-vendor/lib64/libneuron_runtime_vpp.6.0.3.so
-vendor/lib64/libneuron_runtime_vpp.6.so
+vendor/lib64/libneuron_runtime_vpp.6.0.3.so;FIX_SONAME
+vendor/lib64/libneuron_runtime_vpp.6.so;FIX_SONAME
 vendor/lib64/libneuropilot_hal_utils.so
 vendor/lib64/libnir_neon_driver.so
-vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
+vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
 vendor/lib64/libnlcparser.so
 vendor/lib64/libnpagent.so
 vendor/lib64/libnpagent_server.so
@@ -2943,8 +2920,6 @@ vendor/lib64/libnwk_opt_halwrap_vendor.so
 vendor/lib64/libnxp_extamp_intf.so
 vendor/lib64/liboem_specific.so
 vendor/lib64/libperfctl_vendor.so
-vendor/lib64/libpowerhal.so
-vendor/lib64/libpowerhalwrap_vendor.so
 vendor/lib64/libpq_cust_base.so
 vendor/lib64/librcs_interface.so
 vendor/lib64/librgbwlightsensor.so
@@ -2954,7 +2929,7 @@ vendor/lib64/libscltm.so
 vendor/lib64/libsimlock.so
 vendor/lib64/libsimmelock.so
 vendor/lib64/libsn100u_fw.so
-vendor/lib64/libspeech_enh_lib.so
+vendor/lib64/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/libtflite_mtk.so
 vendor/lib64/libthha.so
@@ -2987,7 +2962,6 @@ vendor/lib64/libwpa_client.so
 vendor/lib64/libwpfa.so
 vendor/lib64/ls_nq_client.so
 vendor/lib64/mtk000_mipi_raw_tuning.so
-vendor/lib64/pangu_decouple_phony.so
 vendor/lib64/se_nq_extn_client.so
 vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
@@ -3064,4 +3038,3 @@ vendor/lib/libpixelflinger.so
 vendor/lib64/libpixelflinger.so
 vendor/lib64/android.frameworks.displayservice@1.0.so
 vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
-vendor/lib64/android.hardware.power-service-mediatek.so
