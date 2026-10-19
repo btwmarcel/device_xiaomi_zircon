@@ -161,10 +161,6 @@
         <transport>hwbinder</transport>
         <fqname>@1.2::IDmcService/dmc_hidl_service</fqname>
     </hal>
-    <hal format="aidl">
-        <name>vendor.mediatek.hardware.engineermode</name>
-        <fqname>IEmds/default</fqname>
-    </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.log</name>
         <transport>hwbinder</transport>
