@@ -8,8 +8,6 @@ dbgtop-drm.ko
 irq-dbg.ko
 mtk_sync.ko
 mtk_disp_notify.ko
-mtk_printk_ctrl.ko
-log_store.ko
 nvmem_mtk-devinfo.ko
 mtk_wdt.ko
 timer-mediatek.ko

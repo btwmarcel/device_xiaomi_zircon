@@ -6,8 +6,11 @@
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# A/B
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl.recovery \
@@ -90,7 +93,7 @@ PRODUCT_PACKAGES += \
     multi_init.rc \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt6886:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6886
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6886:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6886
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
