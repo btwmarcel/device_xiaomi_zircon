@@ -17,6 +17,9 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 PRODUCT_PACKAGES += \
+    android.hardware.security.keymint-V2-ndk.vendor
+
+PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
     update_verifier
