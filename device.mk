@@ -17,7 +17,9 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.default_recovery
 
 PRODUCT_PACKAGES += \
-    android.hardware.security.keymint-V2-ndk.vendor
+    android.hardware.security.keymint-V2-ndk.vendor \
+    android.hardware.hardware_keystore.xml \
+    libcppbor_external.vendor
 
 PRODUCT_PACKAGES += \
     update_engine \
