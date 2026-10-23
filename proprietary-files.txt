@@ -1870,7 +1870,6 @@ odm/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc
 odm/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc
 odm/etc/vintf/manifest/AHBF@2.1-service.xml
 odm/etc/vintf/manifest/fod.xml
-odm/etc/vintf/manifest/mrm.xml
 odm/etc/vintf/manifest/vendor.tms.hardware.nfc.xml
 odm/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature@1.0-service.xml
 odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@2.0-service.xml
