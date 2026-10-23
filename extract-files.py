@@ -95,7 +95,7 @@ blob_fixups: blob_fixups_user_type = {
 
     (
         'vendor/lib64/libnvram.so',
-        'android.hardware.usb-aidl-service.mediatekv1.0',
+        'vendor/bin/hw/android.hardware.usb-aidl-service.mediatekv1.0',
         'odm/lib64/tms-utils.so',
         'odm/lib64/nfc_nci.thn31nfc.tms.so',
         'odm/lib64/nfc_nci.nqx.default.hw.so'

@@ -1581,6 +1581,9 @@ vendor/etc/thermald-devices.conf
 vendor/bin/hw/android.hardware.usb.gadget-service.mediatekv1.1
 vendor/etc/init/android.hardware.usb.gadget-service.mediatek.rc
 vendor/etc/vintf/manifest/android.hardware.usb.gadget-service.mediatek.xml
+vendor/bin/hw/android.hardware.usb-aidl-service.mediatekv1.0
+vendor/etc/init/android.hardware.usb-aidl-service.mediatek.rc
+vendor/etc/vintf/manifest/android.hardware.usb-aidl-service.mediatek.xml
 
 # Vibrator
 odm/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
