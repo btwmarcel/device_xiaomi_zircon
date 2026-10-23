@@ -954,6 +954,7 @@ vendor/bin/hw/android.hardware.graphics.composer@2.1-service
 vendor/bin/hw/android.hardware.graphics.composer@2.3-service
 vendor/bin/hw/android.hardware.graphics.composer@2.4-service
 vendor/bin/hw/android.hardware.graphics.composer@3.1-service
+vendor/etc/init/android.hardware.graphics.composer@3.1-service.rc
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.7-service
 vendor/bin/hw/vendor.mediatek.hardware.pq_aidl-service
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
