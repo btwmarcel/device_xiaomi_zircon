@@ -6,6 +6,7 @@ vendor/lib/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib/hw/audio.primary.mt68
 vendor/lib/hw/audio.r_submix.default.so
 vendor/lib/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib/hw/audio.r_submix.mt6886.so
 vendor/lib/hw/audio.usb.default.so
+vendor/lib/libalsautils.so:vendor/lib/libalsautils-v33.so;FIX_SONAME
 vendor/lib/libaudiocloudctrl.so
 vendor/lib/libaudiodatabase.so
 vendor/lib/libaudiotoolkit_vendor.so
@@ -22,6 +23,7 @@ vendor/lib64/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib64/hw/audio.primary.
 vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib64/hw/audio.r_submix.mt6886.so
 vendor/lib64/hw/audio.usb.default.so
+vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v33.so;FIX_SONAME
 vendor/lib64/libaudiocloudctrl.so
 vendor/lib64/libaudiodatabase.so
 vendor/lib64/libaudiotoolkit_vendor.so

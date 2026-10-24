@@ -78,6 +78,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek-recovery
 
 PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-service
+
+PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal
 
 PRODUCT_PACKAGES += \
