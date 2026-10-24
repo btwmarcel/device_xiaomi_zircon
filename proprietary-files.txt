@@ -208,12 +208,14 @@ vendor/etc/audio_param/nlc.bin
 vendor/etc/smartpa_param/AW_DSP.bin
 
 # Bluetooth
+vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
 vendor/lib/libbluetooth_mtk.so
 vendor/lib/libbt-vendor.so
 vendor/lib/libnvram.so
 vendor/lib/libnvram_sec.so
+vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
 vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbt-vendor.so
 vendor/lib64/libnvram.so
