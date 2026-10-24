@@ -95,6 +95,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service.example
 
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.lineage
+
 # Graphics shims
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-resources-v34.vendor
