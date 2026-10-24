@@ -54,6 +54,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.example
+
 # Graphics shims
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-resources-v34.vendor
@@ -104,9 +108,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6886:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6886
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.mediatek \
+    android.hardware.usb.gadget-service.mediatek
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/google/pixel \
     hardware/mediatek
 
 # Inherit the proprietary files
