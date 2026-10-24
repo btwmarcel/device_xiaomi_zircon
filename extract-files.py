@@ -128,6 +128,11 @@ blob_fixups: blob_fixups_user_type = {
     'odm/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so': blob_fixup()
         .add_needed('libui_shim.so')
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+
+    ('vendor/lib/hw/audio.primary.mediatek.so',
+     'vendor/lib64/hw/audio.primary.mediatek.so'): blob_fixup()
+        .replace_needed('libalsautils.so', 'libalsautils-v33.so')
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
 }
 
 module = ExtractUtilsModule(

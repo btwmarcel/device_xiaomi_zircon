@@ -50,9 +50,42 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
-# Health
+# Audio
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-service
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio@7.1-impl \
+    android.hardware.soundtrigger@2.3-impl \
+    android.hardware.audio.service \
+    audio.bluetooth.default \
+    audio.primary.default \
+    audio.r_submix.default \
+    audio.usbv2.default \
+    libaudiopreprocessing \
+    android.hardware.audio@6.0.vendor \
+    android.hardware.audio@7.0.vendor \
+    android.hardware.audio@7.1.vendor \
+    android.hardware.audio.common@6.0.vendor \
+    android.hardware.audio.common@7.0.vendor \
+    android.hardware.audio.effect@6.0.vendor \
+    android.hardware.audio.effect@7.0.vendor \
+    android.hardware.soundtrigger@2.3.vendor \
+    libaudiofoundation.vendor \
+    libhidltransport.vendor \
+    libhwbinder.vendor
+
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.mediatek \
+    android.hardware.health-service.mediatek-recovery
+
+PRODUCT_PACKAGES += \
+    android.hardware.sensors-service.multihal
+
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack-service.mediatek
+
+PRODUCT_PACKAGES += \
+    vndservice \
+    vndservicemanager
 
 # Power
 PRODUCT_PACKAGES += \
@@ -113,6 +146,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
     android.hardware.usb.gadget-service.mediatek
+
+$(call soong_config_set_bool,android_hardware_mediatek_usb,audio_accessory_supported,true)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
