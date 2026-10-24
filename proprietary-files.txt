@@ -2347,7 +2347,6 @@ vendor/etc/vintf/manifest/manifest_mmlpq.xml
 vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.cld.xml
 vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.otrpagent@2.0.xml
 vendor/etc/vintf/manifest/mtkgnss-batching.xml
-vendor/etc/vintf/manifest/power-mediatek.xml
 vendor/etc/vintf/manifest/vendor.mediatek.hardware.neuropilot.agent@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.bgservice@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.mimd@1.0-service.xml
