@@ -437,6 +437,7 @@ ro.frp.pst=/dev/block/by-name/frp
 ro.hardware.consumerir=common
 ro.hardware.gralloc=common
 ro.hardware.hwcomposer=mtk_common
+ro.hardware.gatekeeper=mitee
 ro.hardware.nfcsinglesim=0
 ro.incremental.enable=yes
 ro.lmk.kill_heaviest_task=true

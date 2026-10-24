@@ -1143,10 +1143,10 @@ system_ext/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so
 vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 
 # Gatekeeper
-vendor/lib/hw/gatekeeper.mitee.so
-vendor/lib/hw/libSoftGatekeeper.so;SYMLINK=vendor/lib/hw/gatekeeper.default.so
-vendor/lib64/hw/gatekeeper.mitee.so
-vendor/lib64/hw/libSoftGatekeeper.so;SYMLINK=vendor/lib64/hw/gatekeeper.default.so
+vendor/lib/hw/gatekeeper.mitee.so;SYMLINK=vendor/lib/hw/gatekeeper.default.so
+vendor/lib/hw/libSoftGatekeeper.so
+vendor/lib64/hw/gatekeeper.mitee.so;SYMLINK=vendor/lib64/hw/gatekeeper.default.so
+vendor/lib64/hw/libSoftGatekeeper.so
 
 # GNSS
 vendor/bin/hw/android.hardware.gnss-service.mediatek
