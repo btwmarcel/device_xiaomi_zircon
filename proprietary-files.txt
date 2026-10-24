@@ -1209,9 +1209,6 @@ vendor/etc/vintf/manifest/android.hardware.identity@4.0-service.mitee.xml
 vendor/lib/hw/consumerir.common.so
 vendor/lib64/hw/consumerir.common.so
 
-# Light
-vendor/bin/hw/android.hardware.lights-service.mediatek
-
 # Local time
 vendor/lib/hw/local_time.default.so
 vendor/lib64/hw/local_time.default.so
@@ -2097,7 +2094,6 @@ vendor/etc/init/init.gps_scp.rc
 vendor/etc/init/init.thermal_core.rc
 vendor/etc/init/init.vendor.ins.rc
 vendor/etc/init/lbs_hidl_service.rc
-vendor/etc/init/lights-mtk-default.rc
 vendor/etc/init/mcfota_service.rc
 vendor/etc/init/mi_ic.rc
 vendor/etc/init/mi_ric.rc
@@ -2338,7 +2334,6 @@ vendor/etc/vintf/manifest/dumpstate-xiaomi.xml
 vendor/etc/vintf/manifest/em_hal_service.xml
 vendor/etc/vintf/manifest/gnss@2.1-service-mediatek.xml
 vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
-vendor/etc/vintf/manifest/lights-mtk-default.xml
 vendor/etc/vintf/manifest/manifest_apuware_apusys_aidl.xml
 vendor/etc/vintf/manifest/manifest_apuware_utils.xml
 vendor/etc/vintf/manifest/manifest_cameraprovider.xml
