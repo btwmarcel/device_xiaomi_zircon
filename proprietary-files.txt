@@ -949,7 +949,7 @@ system_ext/lib/vendor.mediatek.hardware.pq@2.7.so.hbtf
 system_ext/lib/vendor.mediatek.hardware.pq@2.8.so.hbtf
 system_ext/lib/vendor.mediatek.hardware.pq@2.9.so.hbtf
 system_ext/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so
-vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek.mt6886
+vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek.mt6886;SYMLINK=vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/android.hardware.graphics.composer@2.1-service
 vendor/bin/hw/android.hardware.graphics.composer@2.3-service
 vendor/bin/hw/android.hardware.graphics.composer@2.4-service
@@ -970,8 +970,8 @@ vendor/lib/egl/libMEOW_data.so
 vendor/lib/egl/libMEOW_gift.so
 vendor/lib/egl/libMEOW_qt.so
 vendor/lib/egl/libMEOW_trace.so
-vendor/lib/hw/mt6886/android.hardware.graphics.allocator@4.0-impl-mediatek.so
-vendor/lib/hw/mt6886/android.hardware.graphics.mapper@4.0-impl-mediatek.so
+vendor/lib/hw/mt6886/android.hardware.graphics.allocator@4.0-impl-mediatek.so;SYMLINK=vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
+vendor/lib/hw/mt6886/android.hardware.graphics.mapper@4.0-impl-mediatek.so;SYMLINK=vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib/hw/gralloc.common.so
 vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/vendor.mediatek.hardware.mms@1.7-impl.so
@@ -1038,8 +1038,8 @@ vendor/lib64/egl/libMEOW_data.so
 vendor/lib64/egl/libMEOW_gift.so
 vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
-vendor/lib64/hw/mt6886/android.hardware.graphics.allocator@4.0-impl-mediatek.so
-vendor/lib64/hw/mt6886/android.hardware.graphics.mapper@4.0-impl-mediatek.so
+vendor/lib64/hw/mt6886/android.hardware.graphics.allocator@4.0-impl-mediatek.so;SYMLINK=vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
+vendor/lib64/hw/mt6886/android.hardware.graphics.mapper@4.0-impl-mediatek.so;SYMLINK=vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/gralloc.common.so
 vendor/lib64/hw/gralloc.default.so
 vendor/lib64/hw/hwcomposer.mtk_common.so

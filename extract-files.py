@@ -59,6 +59,26 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.graphics.common-V6-ndk.so',
                         'android.hardware.graphics.common-V7-ndk.so'),
 
+    'vendor/bin/hw/android.hardware.graphics.composer@3.1-service': blob_fixup()
+        .replace_needed('android.hardware.graphics.composer@2.1-resources.so',
+                        'android.hardware.graphics.composer@2.1-resources-v34.so'),
+
+    (
+        'odm/lib/hw/displayfeature.default.so',
+        'odm/lib64/hw/displayfeature.default.so',
+        'vendor/bin/dconfig',
+        'vendor/lib/hw/vendor.mediatek.hardware.pq_aidl-impl.so',
+        'vendor/lib64/hw/vendor.mediatek.hardware.pq_aidl-impl.so',
+        'vendor/lib/libmmlpqImpl.so',
+        'vendor/lib64/libmmlpqImpl.so',
+        'vendor/lib/libpqxmlparser.so',
+        'vendor/lib64/libpqxmlparser.so',
+    ): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+
+    'vendor/lib64/libcom.xiaomi.grallocutils.so': blob_fixup()
+        .add_needed('libui_shim.so'),
+
     ('vendor/lib64/libalAILDC.so', 'vendor/lib64/libalLDC.so', 'vendor/lib64/libalhLDC.so'): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')

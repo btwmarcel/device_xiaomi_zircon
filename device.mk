@@ -54,6 +54,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service
 
+# Graphics shims
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.1-resources-v34.vendor
+
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
 
