@@ -153,6 +153,10 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set_bool,android_hardware_mediatek_usb,audio_accessory_supported,true)
 
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
+    frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
