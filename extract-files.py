@@ -24,6 +24,9 @@ namespace_imports = [
 ]
 
 blob_fixups: blob_fixups_user_type = {
+    ('vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b',): blob_fixup()
+        .add_needed('libstagefright_foundation-v33.so'),
+
     ('vendor/lib64/libcodec2_mtk_vdec.so', 'vendor/lib64/libcodec2_mtk_venc.so'): blob_fixup()
         .replace_needed('libformatter.so', 'libformatter-mtk.so'),
 
