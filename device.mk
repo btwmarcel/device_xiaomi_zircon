@@ -75,6 +75,9 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
@@ -90,7 +93,8 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek
 
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth-service.mediatek
+    android.hardware.bluetooth-service.mediatek \
+    android.hardware.bluetooth.audio-impl
 
 PRODUCT_PACKAGES += \
     vndservice \
