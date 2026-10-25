@@ -69,6 +69,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0.vendor \
     android.hardware.audio.effect@7.0.vendor \
     android.hardware.soundtrigger@2.3.vendor \
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth.audio-V2-ndk.vendor \
     libaudiofoundation.vendor \
     libhidltransport.vendor \
     libhwbinder.vendor
@@ -86,6 +88,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek
+
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth-service.mediatek
 
 PRODUCT_PACKAGES += \
     vndservice \
