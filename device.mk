@@ -96,6 +96,9 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.example
 
 PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
+
+PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
 
 # Shims
