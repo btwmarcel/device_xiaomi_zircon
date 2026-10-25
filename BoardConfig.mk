@@ -161,6 +161,9 @@ BOARD_AVB_VENDOR_BOOT_ROLLBACK_INDEX := 1
 BOARD_AVB_VENDOR_BOOT_ROLLBACK_INDEX_LOCATION := 1
 
 # VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml \
+    hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Wi-Fi

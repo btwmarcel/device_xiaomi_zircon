@@ -219,7 +219,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/pixel \
-    hardware/mediatek
+    hardware/mediatek \
+    hardware/xiaomi
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/zircon/zircon-vendor.mk)
