@@ -187,5 +187,8 @@ WIFI_HAL_INTERFACE_COMBINATIONS += ,{{{STA}, 1}, {{AP}, 1}}
 WIFI_HAL_INTERFACE_COMBINATIONS += ,{{{STA}, 1}, {{P2P}, 1}}
 WIFI_HAL_INTERFACE_COMBINATIONS += ,{{{STA}, 1}, {{NAN}, 1}}
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Inherit the proprietary files
 include vendor/xiaomi/zircon/BoardConfigVendor.mk
