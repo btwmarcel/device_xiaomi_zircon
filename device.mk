@@ -98,9 +98,25 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
 
-# Graphics shims
+# Shims
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.1-resources-v34.vendor
+    android.hardware.graphics.composer@2.1-resources-v34.vendor \
+    libbase_shim \
+    libprocessgroup_shim \
+    libstagefright_foundation-v33 \
+    libtinyxml2-v34 \
+    libui_shim
+
+# Display
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4627039422300187648.xml
+
+# NFC
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
+    frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.ese.xml
 
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true

@@ -26,11 +26,19 @@ namespace_imports = [
 blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/libcodec2_mtk_vdec.so', 'vendor/lib64/libcodec2_mtk_venc.so'): blob_fixup()
         .replace_needed('libformatter.so', 'libformatter-mtk.so'),
+
+    ('vendor/lib64/hw/sensors.mediatek.V2.0.so', 'vendor/lib64/libcodec2_mtk_c2store.so', 'vendor/lib64/libcodec2_mtk_vdec.so',
+        'vendor/lib64/libcodec2_mtk_venc.so', 'vendor/lib64/libcodec2_vpp_AIMEMC_plugin.so', 'vendor/lib64/libcodec2_vpp_AISR_plugin.so',
+        'vendor/lib64/libcodec2_vpp_dolby_plugin.so', 'vendor/lib64/libcodec2_vpp_gc_plugin.so', 'vendor/lib64/libcodec2_vpp_mi_plugin.so',
+        'vendor/lib64/libcodec2_vpp_qt_plugin.so', 'vendor/lib64/libcodec2_vpp_rs_plugin.so'): blob_fixup()
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
+
     'odm/lib64/libmt_mitee@1.3.so': blob_fixup()
         .replace_needed('android.hardware.security.keymint-V2-ndk.so',
                         'android.hardware.security.keymint-V4-ndk.so')
         .replace_needed('libkeymint_support.so',
                     'libkeymint_support_V4.so'),
+
     (
         'vendor/lib/vendor.mediatek.hardware.pq_aidl-V1-ndk.so',
         'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V1-ndk.so',
