@@ -999,7 +999,6 @@ vendor/lib/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib/vendor.mediatek.hardware.pq_aidl-V1-ndk.so
 vendor/lib/vendor.mediatek.hardware.pq_aidl-V2-ndk.so
-vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
 vendor/lib/vendor.xiaomi.sensor.citsensorservice@1.1.so
 vendor/lib/vendor.xiaomi.sensor.citsensorservice@2.0.so
 vendor/lib64/egl/libGLES_mali.so
@@ -1069,7 +1068,6 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so
 vendor/lib64/vendor.xiaomi.sensor.citsensorservice@2.0.so
 
@@ -1104,13 +1102,10 @@ vendor/lib64/vendor.xiaomi.hardware.blackbox-V1-ndk.so
 # Fingerprint
 odm/lib/hw/fingerprint.goodix_fod.so
 odm/lib/libgf_hal.so
-odm/lib/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 odm/lib64/hw/fingerprint.goodix_fod.so
 odm/lib64/libgf_hal.so
-odm/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 system_ext/lib/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so
 system_ext/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so
-vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 
 # Gatekeeper
 vendor/lib/hw/gatekeeper.mitee.so;SYMLINK=vendor/lib/hw/gatekeeper.default.so
@@ -1272,9 +1267,8 @@ vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 
 # NFC
 odm/bin/hw/android.hardware.nfc@1.2-service-tms
-odm/bin/hw/vendor.nxp.hardware.nfc@2.0-service
 odm/etc/init/android.hardware.nfc@1.2-service-tms.rc
-odm/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc
+odm/etc/vintf/manifest/vendor.tms.hardware.nfc.xml
 odm/lib/7816-3-T1.so
 odm/lib/nfc_nci.nqx.default.hw.so
 odm/lib/nfc_nci.thn31nfc.tms.so
@@ -1293,7 +1287,7 @@ vendor/lib64/vendor.nxp.hardware.nfc@2.0.so
 # NFC configs
 odm/etc/libnfc-nci.conf
 odm/etc/libnfc-nxp.conf
-odm/etc/libnfc-nxp_RF.conf
+odm/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 odm/etc/libnfc-tms.conf
 odm/etc/libnfc-tms_RF_EC2.conf
 vendor/etc/libnfc-nxp-pnscr.conf
@@ -1341,20 +1335,9 @@ odm/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-miteeservice.rc
 odm/etc/init/vendor.xiaomi.hardware.mlipay@1.1-miteeservice.rc
 odm/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-miteeservice.rc
 odm/etc/init/vendor.xiaomi.hardware.tidaservice@1.2-miteeservice.rc
-odm/lib/vendor.xiaomi.hardware.mfidoca@1.0.so
-odm/lib/vendor.xiaomi.hardware.mlipay@1.0.so
-odm/lib/vendor.xiaomi.hardware.mlipay@1.1.so
-odm/lib/vendor.xiaomi.hardware.mtdservice@1.0.so
 odm/lib/vendor.xiaomi.hardware.tidaservice@1.0.so
 odm/lib/vendor.xiaomi.hardware.tidaservice@1.1.so
 odm/lib/vendor.xiaomi.hardware.tidaservice@1.2.so
-odm/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so
-odm/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
-odm/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
-odm/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
-odm/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so
-odm/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so
-odm/lib64/vendor.xiaomi.hardware.mtdservice@1.3.so
 odm/lib64/vendor.xiaomi.hardware.tidaservice@1.0.so
 odm/lib64/vendor.xiaomi.hardware.tidaservice@1.1.so
 odm/lib64/vendor.xiaomi.hardware.tidaservice@1.2.so
@@ -1827,7 +1810,6 @@ odm/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc
 odm/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc
 odm/etc/vintf/manifest/AHBF@2.1-service.xml
 odm/etc/vintf/manifest/fod.xml
-odm/etc/vintf/manifest/vendor.tms.hardware.nfc.xml
 odm/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature@1.0-service.xml
 odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@2.0-service.xml
 odm/etc/vintf/manifest_dsds.xml
@@ -2683,7 +2665,6 @@ vendor/lib/vendor.xiaomi.hidl.minet@1.0-impl.so
 vendor/lib/vendor.xiaomi.hidl.minet@1.0.so
 vendor/lib/vendor.xiaomi.hidl.miwill@1.0-impl.so
 vendor/lib/vendor.xiaomi.hidl.miwill@1.0.so
-vendor/lib/vendor.xiaomi.hw.touchfeature@1.0.so
 vendor/lib/zirconimx355sunny_mipi_raw_tuning.so
 vendor/lib/zirconov02b10sunny_mipi_raw_tuning.so
 vendor/lib/zirconov16a1qsunny_mipi_raw_tuning.so
@@ -2961,7 +2942,6 @@ vendor/lib64/vendor.xiaomi.hidl.minet@1.0-impl.so
 vendor/lib64/vendor.xiaomi.hidl.minet@1.0.so
 vendor/lib64/vendor.xiaomi.hidl.miwill@1.0-impl.so
 vendor/lib64/vendor.xiaomi.hidl.miwill@1.0.so
-vendor/lib64/vendor.xiaomi.hw.touchfeature@1.0.so
 vendor/lib64/vendor.xiaomi.sensor.communicate@1.0.so
 vendor/lib64/zirconimx355sunny_mipi_raw_IdxMgr.so
 vendor/lib64/zirconimx355sunny_mipi_raw_tuning.so
