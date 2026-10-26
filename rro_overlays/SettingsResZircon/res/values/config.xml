@@ -1,0 +1,3 @@
+<resources>
+    <bool name="config_show_peak_refresh_rate_switch">true</bool>
+</resources>
