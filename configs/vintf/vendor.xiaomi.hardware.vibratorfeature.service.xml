@@ -7,6 +7,7 @@
 <manifest version="1.0" type="device">
     <hal format="aidl">
         <name>android.hardware.vibrator</name>
+        <fqname>IVibrator/default</fqname>
         <fqname>IVibrator/vibratorfeature</fqname>
     </hal>
 </manifest>

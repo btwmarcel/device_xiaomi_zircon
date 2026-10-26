@@ -1,0 +1,18 @@
+//
+// Copyright (C) 2026 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_binary {
+    name: "android.hardware.vibrator-service.alias",
+    srcs: ["main.cpp"],
+    init_rc: ["vendor.vibrator-alias.rc"],
+    relative_install_path: "hw",
+    device_specific: true,
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "liblog",
+    ],
+}

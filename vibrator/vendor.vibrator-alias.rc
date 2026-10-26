@@ -1,0 +1,8 @@
+service vendor.vibrator-alias /odm/bin/hw/android.hardware.vibrator-service.alias
+    class hal
+    user system
+    group system
+    oneshot
+
+on property:init.svc.vibratorfeature-hal-service=restarting
+    start vendor.vibrator-alias

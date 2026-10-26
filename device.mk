@@ -232,7 +232,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.legacy
+    android.hardware.vibrator-service.alias
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
