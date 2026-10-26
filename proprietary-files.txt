@@ -1434,6 +1434,7 @@ vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.mitee.xm
 vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.mitee.xml
 
 # Sensors
+vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
 vendor/lib/hw/sensors.dynamic_sensor_hal.so
 vendor/lib/hw/sensors.elliptic@2.0.so
 vendor/lib/libhidparser.so
@@ -1528,7 +1529,6 @@ vendor/etc/thermald-devices.conf
 odm/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
 odm/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc
 odm/etc/init/vendor.xiaomi.hardware.vibratorfeature@1.0-service.rc
-odm/etc/vintf/manifest/vendor.xiaomi.hardware.vibratorfeature.service.xml
 vendor/lib/hw/vibrator.default.so
 vendor/lib64/hw/vibrator.default.so
 
