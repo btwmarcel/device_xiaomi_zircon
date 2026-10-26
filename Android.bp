@@ -5,3 +5,9 @@
 
 soong_namespace {
 }
+
+vintf_fragment {
+    name: "vendor.xiaomi.hardware.vibratorfeature.service.xml",
+    src: "configs/vintf/vendor.xiaomi.hardware.vibratorfeature.service.xml",
+    device_specific: true,
+}

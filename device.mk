@@ -123,6 +123,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4627039422300187648.xml
 
+# VINTF
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.vibratorfeature.service.xml
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp
@@ -225,6 +229,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     FrameworksResZircon \
     SettingsResZircon
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.legacy
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
