@@ -1750,7 +1750,6 @@ vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # Miscellaneous
 odm/app/goodix_sz_zircon/goodix_sz_zircon.apk
-odm/bin/hw/mfp-daemon
 odm/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service
 odm/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service
 odm/bin/SoterProvisioningTool_mitee
@@ -1795,7 +1794,6 @@ odm/etc/disp0/dsi_n16u_42_02_0a_dsc_vdo/miLut_7.txt
 odm/etc/disp0/dsi_n16u_42_02_0a_dsc_vdo/miLut_8.txt
 odm/etc/disp0/dsi_n16u_42_02_0a_dsc_vdo/miLut_9.txt
 odm/etc/init/display.rc
-odm/etc/init/init.mfp-daemon.rc
 odm/etc/init/init.thn31.nfc.rc
 odm/etc/init/init.thn31.se.rc
 odm/etc/init/mrm_mitee.rc
