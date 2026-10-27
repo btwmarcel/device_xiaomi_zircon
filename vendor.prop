@@ -708,3 +708,9 @@ vendor.mtk.vdec.waitkeyframeforplay=9
 
 vendor.usb.controller=11201000.usb0
 vendor.usb.vid=0x2717
+
+# UDFPS
+
+persist.vendor.fingerprint.type=udfps_optical
+persist.vendor.fingerprint.sensor_location=609|2437|105
+ro.vendor.sensors.xiaomi.udfps=true

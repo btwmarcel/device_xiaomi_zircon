@@ -173,6 +173,7 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.sensor_2_0.rc \
     init_conninfra.rc \
+    init.zircon-udfps.rc \
     meta_init.connectivity.common.rc \
     meta_init.connectivity.rc \
     meta_init.modem.rc \
@@ -228,11 +229,20 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResZircon \
-    SettingsResZircon
+    SettingsResZircon \
+    SystemUIResZircon
 
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.alias
+
+# UDFPS
+PRODUCT_PACKAGES += \
+    libudfpshandler \
+    android.hardware.biometrics.fingerprint-service.xiaomi
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

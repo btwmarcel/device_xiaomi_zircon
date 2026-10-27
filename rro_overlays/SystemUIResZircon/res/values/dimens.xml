@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pixel_pitch" format="float">48.28</dimen>
+</resources>

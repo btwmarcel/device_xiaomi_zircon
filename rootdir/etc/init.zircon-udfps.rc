@@ -1,0 +1,24 @@
+on early-boot
+    chown system graphics /sys/bus/platform/devices/soc:xiaomi_fingerprint/fingerdown
+    chmod 0664 /sys/bus/platform/devices/soc:xiaomi_fingerprint/fingerdown
+
+on boot
+    chown system system /dev/goodix_fp
+    chmod 0660 /dev/goodix_fp
+
+    chown system system /dev/disp_feature
+    chmod 0660 /dev/disp_feature
+
+on property:sys.boot_completed=1
+    chown system system /dev/goodix_fp
+    chmod 0660 /dev/goodix_fp
+    restart vendor.fingerprint-default
+
+on post-fs-data
+    mkdir /data/vendor/misc 01771 system system
+    mkdir /data/vendor/misc/mi_fp 0770 system system
+    mkdir /data/vendor/goodix 0770 system system
+    mkdir /data/vendor/fingerprint 0770 system system
+    mkdir /data/vendor/fpdump 0770 system system
+    mkdir /mnt/vendor/persist/mi_fp 0770 system system
+    mkdir /mnt/vendor/persist/goodix 0770 system system
