@@ -25,6 +25,11 @@ namespace_imports = [
 ]
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/lib64/hw/hwcomposer.mtk_common.so': blob_fixup()
+        .binary_regex_replace(
+            b'/sys/class/mi_display/disp-DSI-0/brightness_clone\x00',
+            b'/sys/class/leds/lcd-backlight/brightness'.ljust(50, b'\x00'),
+        ),
     ('vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b',): blob_fixup()
         .add_needed('libstagefright_foundation-v33.so'),
 
