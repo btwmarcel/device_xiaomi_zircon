@@ -11,7 +11,7 @@
     </screenBrightnessMap>
     <highBrightnessMode enabled="true">
         <!-- Transition point brightness from normal to HBM mode -->
-        <transitionPoint>0.85</transitionPoint>
+        <transitionPoint>0.117</transitionPoint>
         <!-- Minimum lux to enter HBM -->
         <minimumLux>6001</minimumLux>
         <!-- Time limitation for HBM-->
@@ -36,4 +36,8 @@
             </point>
         </sdrHdrRatioMap>
     </highBrightnessMode>
+    <screenBrightnessRampFastDecrease>2.0</screenBrightnessRampFastDecrease>
+    <screenBrightnessRampFastIncrease>2.0</screenBrightnessRampFastIncrease>
+    <screenBrightnessRampSlowDecrease>0.6</screenBrightnessRampSlowDecrease>
+    <screenBrightnessRampSlowIncrease>0.6</screenBrightnessRampSlowIncrease>
 </displayConfiguration>

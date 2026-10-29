@@ -1,0 +1,505 @@
+{
+  "Nodes": [
+    {
+      "Name": "MemFreq",
+      "Path": "/sys/devices/platform/soc/1c00f000.dvfsrc/mtk-dvfsrc-devfreq/devfreq/mtk-dvfsrc-devfreq/userspace/set_freq",
+      "Values": [
+        "4266000000",
+        "3200000000",
+        "2133000000",
+        "1866000000",
+        "1600000000",
+        "800000000",
+        "0"
+      ],
+      "ResetOnInit": true,
+      "Comments": [
+        "It is userspace gov, powerhal will have exclusive and direct control of the freq"
+      ]
+    },
+    {
+      "Name": "GpuPwrLevel",
+      "Path": "/proc/gpufreqv2/fix_target_opp_index",
+      "Values": [
+        "-1",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48"
+      ],
+      "ResetOnInit": true,
+      "DefaultIndex": 0,
+      "Comments": [
+        "[-1*] normal",
+        "[00*] freq: 1300000, volt: 81875, vsram: 81875, posdiv: 1, margin: 8125, power: 1093",
+        "[01*] freq: 1250000, volt: 80000, vsram: 80000, posdiv: 1, margin: 8750, power: 1005",
+        "[02*] freq: 1200000, volt: 77500, vsram: 77500, posdiv: 1, margin: 10000, power: 909",
+        "[03*] freq: 1150000, volt: 75625, vsram: 75625, posdiv: 1, margin: 10000, power: 814",
+        "[04*] freq: 1130000, volt: 74375, vsram: 75000, posdiv: 1, margin: 10625, power: 781",
+        "[05*] freq: 1115000, volt: 74375, vsram: 75000, posdiv: 1, margin: 10625, power: 773",
+        "[06*] freq: 1100000, volt: 73750, vsram: 75000, posdiv: 1, margin: 10625, power: 749",
+        "[07*] freq: 1085000, volt: 73125, vsram: 75000, posdiv: 1, margin: 10625, power: 734",
+        "[08*] freq: 1070000, volt: 72500, vsram: 75000, posdiv: 1, margin: 10625, power: 710",
+        "[09*] freq: 1055000, volt: 72500, vsram: 75000, posdiv: 1, margin: 10000, power: 696",
+        "[10*] freq: 1040000, volt: 71875, vsram: 75000, posdiv: 1, margin: 10000, power: 673",
+        "[11*] freq: 1025000, volt: 71250, vsram: 75000, posdiv: 1, margin: 10000, power: 650",
+        "[12*] freq: 1010000, volt: 70625, vsram: 75000, posdiv: 1, margin: 10000, power: 637",
+        "[13*] freq: 995000, volt: 70625, vsram: 75000, posdiv: 1, margin: 9375, power: 630",
+        "[14*] freq: 980000, volt: 70000, vsram: 75000, posdiv: 1, margin: 9375, power: 609",
+        "[15*] freq: 965000, volt: 69375, vsram: 75000, posdiv: 1, margin: 9375, power: 581",
+        "[16*] freq: 950000, volt: 68750, vsram: 75000, posdiv: 2, margin: 9375, power: 561",
+        "[17*] freq: 935000, volt: 68750, vsram: 75000, posdiv: 2, margin: 8750, power: 555",
+        "[18*] freq: 920000, volt: 68125, vsram: 75000, posdiv: 2, margin: 9375, power: 542",
+        "[19*] freq: 905000, volt: 67500, vsram: 75000, posdiv: 2, margin: 9375, power: 522",
+        "[20*] freq: 890000, volt: 66875, vsram: 75000, posdiv: 2, margin: 9375, power: 498",
+        "[21*] freq: 872000, volt: 66250, vsram: 75000, posdiv: 2, margin: 9375, power: 480",
+        "[22*] freq: 854000, volt: 66250, vsram: 75000, posdiv: 2, margin: 8750, power: 469",
+        "[23*] freq: 836000, volt: 65625, vsram: 75000, posdiv: 2, margin: 8125, power: 463",
+        "[24*] freq: 818000, volt: 65000, vsram: 75000, posdiv: 2, margin: 8125, power: 439",
+        "[25*] freq: 800000, volt: 64375, vsram: 75000, posdiv: 2, margin: 8125, power: 417",
+        "[26*] freq: 782000, volt: 63750, vsram: 75000, posdiv: 2, margin: 8125, power: 412",
+        "[27*] freq: 764000, volt: 63125, vsram: 75000, posdiv: 2, margin: 8125, power: 391",
+        "[28*] freq: 746000, volt: 62500, vsram: 75000, posdiv: 2, margin: 8125, power: 370",
+        "[29*] freq: 728000, volt: 61875, vsram: 75000, posdiv: 2, margin: 8125, power: 356",
+        "[30*] freq: 710000, volt: 61250, vsram: 75000, posdiv: 2, margin: 8125, power: 346",
+        "[31*] freq: 692000, volt: 60625, vsram: 75000, posdiv: 2, margin: 8125, power: 327",
+        "[32*] freq: 675000, volt: 60000, vsram: 75000, posdiv: 2, margin: 7500, power: 314",
+        "[33*] freq: 655000, volt: 60000, vsram: 75000, posdiv: 2, margin: 6875, power: 304",
+        "[34*] freq: 635000, volt: 60000, vsram: 75000, posdiv: 2, margin: 6250, power: 294",
+        "[35*] freq: 615000, volt: 60000, vsram: 75000, posdiv: 2, margin: 5625, power: 285",
+        "[36*] freq: 596000, volt: 59375, vsram: 75000, posdiv: 2, margin: 5625, power: 272",
+        "[37*] freq: 576000, volt: 59375, vsram: 75000, posdiv: 2, margin: 5000, power: 262",
+        "[38*] freq: 556000, volt: 59375, vsram: 75000, posdiv: 2, margin: 4375, power: 253",
+        "[39*] freq: 537000, volt: 59375, vsram: 75000, posdiv: 2, margin: 3750, power: 244",
+        "[40*] freq: 517000, volt: 58750, vsram: 75000, posdiv: 2, margin: 3750, power: 239",
+        "[41*] freq: 497000, volt: 58750, vsram: 75000, posdiv: 2, margin: 3125, power: 230",
+        "[42*] freq: 478000, volt: 58750, vsram: 75000, posdiv: 2, margin: 2500, power: 221",
+        "[43*] freq: 458000, volt: 58750, vsram: 75000, posdiv: 3, margin: 1875, power: 211",
+        "[44*] freq: 438000, volt: 58125, vsram: 75000, posdiv: 3, margin: 1875, power: 197",
+        "[45*] freq: 419000, volt: 58125, vsram: 75000, posdiv: 3, margin: 1250, power: 192",
+        "[46*] freq: 399000, volt: 58125, vsram: 75000, posdiv: 3, margin: 625, power: 183",
+        "[47*] freq: 379000, volt: 58125, vsram: 75000, posdiv: 3, margin: 0, power: 174",
+        "[48*] freq: 360000, volt: 57500, vsram: 75000, posdiv: 3, margin: 0, power: 161"
+      ]
+    },
+    {
+      "Name": "CPUEfficiencyClusterMaxFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq",
+      "Values": [
+        "2000000",
+        "1950000",
+        "1900000",
+        "1850000",
+        "1800000",
+        "1750000",
+        "1700000",
+        "1650000",
+        "1600000",
+        "1550000",
+        "1500000",
+        "1450000",
+        "1400000",
+        "1350000",
+        "1300000",
+        "1250000",
+        "1200000",
+        "1150000",
+        "1100000",
+        "1050000",
+        "950000",
+        "850000",
+        "750000",
+        "650000",
+        "550000",
+        "480000"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUEfficiencyClusterMinFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq",
+      "Values": [
+        "2000000",
+        "1950000",
+        "1900000",
+        "1850000",
+        "1800000",
+        "1750000",
+        "1700000",
+        "1650000",
+        "1600000",
+        "1550000",
+        "1500000",
+        "1450000",
+        "1400000",
+        "1350000",
+        "1300000",
+        "1250000",
+        "1200000",
+        "1150000",
+        "1100000",
+        "1050000",
+        "950000",
+        "850000",
+        "750000",
+        "650000",
+        "550000",
+        "480000"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUSuperClusterMaxFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq",
+      "Values": [
+        "2800000",
+        "2700000",
+        "2600000",
+        "2500000",
+        "2400000",
+        "2300000",
+        "2200000",
+        "2100000",
+        "2000000",
+        "1900000",
+        "1800000",
+        "1700000",
+        "1600000",
+        "1500000",
+        "1400000",
+        "1300000",
+        "1200000",
+        "1100000",
+        "1000000",
+        "900000",
+        "800000",
+        "700000",
+        "600000",
+        "500000",
+        "400000"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUSuperClusterMinFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq",
+      "Values": [
+        "2800000",
+        "2700000",
+        "2600000",
+        "2500000",
+        "2400000",
+        "2300000",
+        "2200000",
+        "2100000",
+        "2000000",
+        "1900000",
+        "1800000",
+        "1700000",
+        "1600000",
+        "1500000",
+        "1400000",
+        "1300000",
+        "1200000",
+        "1100000",
+        "1000000",
+        "900000",
+        "800000",
+        "700000",
+        "600000",
+        "500000",
+        "400000"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CciFreq",
+      "Path": "/sys/kernel/cm_mgr/dbg_cm_mgr",
+      "Values": [
+        "0",
+        "1"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "GpuBaseDvfsMargin",
+      "Path": "/sys/kernel/ged/hal/timer_base_dvfs_margin",
+      "Values": [
+        "30",
+        "50",
+        "18743356"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "GpuBaseDvfsStep",
+      "Path": "/sys/kernel/ged/hal/loading_base_dvfs_step",
+      "Values": [
+        "103",
+        "16",
+        "771"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "PMQoSCpuDmaLatency",
+      "Path": "/dev/cpu_dma_latency",
+      "Values": [
+        "44",
+        "1000"
+      ],
+      "HoldFd": true
+    },
+    {
+      "Name": "UclampFGMin",
+      "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
+      "Values": [
+        "0",
+        "30"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "UclampTALatency",
+      "Path": "/dev/cpuctl/top-app/cpu.uclamp.latency_sensitive",
+      "Values": [
+        "0",
+        "1"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "UclampTAMin",
+      "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
+      "Values": [
+        "0",
+        "60",
+        "100"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "PowerHALRenderingState",
+      "Path": "vendor.powerhal.rendering",
+      "Values": ["EXPENSIVE_RENDERING", ""],
+      "Type": "Property"
+    }
+  ],
+  "Actions": [
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUSuperClusterMinFreq",
+      "Duration": 1500,
+      "Value": "1700000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUSuperClusterMaxFreq",
+      "Duration": 1500,
+      "Value": "2800000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUEfficiencyClusterMinFreq",
+      "Duration": 1500,
+      "Value": "1500000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUEfficiencyClusterMaxFreq",
+      "Duration": 1500,
+      "Value": "2000000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "MemFreq",
+      "Duration": 1500,
+      "Value": "4266000000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CciFreq",
+      "Duration": 1500,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "UclampFGMin",
+      "Duration": 3000,
+      "Value": "30"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "UclampTAMin",
+      "Duration": 5000,
+      "Value": "60"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "UclampTALatency",
+      "Duration": 5000,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "PMQoSCpuDmaLatency",
+      "Duration": 1000,
+      "Value": "44"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUSuperClusterMinFreq",
+      "Duration": 1500,
+      "Value": "2800000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUEfficiencyClusterMinFreq",
+      "Duration": 1500,
+      "Value": "2000000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "MemFreq",
+      "Duration": 1500,
+      "Value": "4266000000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "GpuPwrLevel",
+      "Duration": 1500,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "GpuBaseDvfsMargin",
+      "Duration": 1500,
+      "Value": "18743356"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "GpuBaseDvfsStep",
+      "Duration": 1500,
+      "Value": "771"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "UclampFGMin",
+      "Duration": 1500,
+      "Value": "30"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "UclampTALatency",
+      "Duration": 3000,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "UclampTAMin",
+      "Duration": 1500,
+      "Value": "100"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "PowerHALRenderingState",
+      "Duration": 0,
+      "Value": "EXPENSIVE_RENDERING"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "MemFreq",
+      "Duration": 0,
+      "Value": "3200000000"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "GpuPwrLevel",
+      "Duration": 0,
+      "Value": "22"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "CPUSuperClusterMinFreq",
+      "Duration": 0,
+      "Value": "2200000"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "CPUEfficiencyClusterMinFreq",
+      "Duration": 0,
+      "Value": "1050000"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "GpuBaseDvfsMargin",
+      "Duration": 0,
+      "Value": "50"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "GpuBaseDvfsStep",
+      "Duration": 0,
+      "Value": "16"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "UclampTAMin",
+      "Duration": 0,
+      "Value": "100"
+    }
+  ]
+}
