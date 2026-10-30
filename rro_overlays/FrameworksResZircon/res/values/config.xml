@@ -16,4 +16,9 @@
     <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">0.118</item>
     <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.0749603</item>
     <item name="config_screenBrightnessDimFloat" format="float" type="dimen">8.54597E-4</item>
+
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
+
+    <string name="config_dozeComponent" translatable="false">com.android.systemui/com.android.systemui.doze.DozeService</string>
 </resources>
