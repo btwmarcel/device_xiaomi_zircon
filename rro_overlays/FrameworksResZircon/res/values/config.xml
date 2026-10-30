@@ -19,6 +19,11 @@
 
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
+    <bool name="config_enableBurnInProtection">true</bool>
+    <integer name="config_burnInProtectionMinHorizontalOffset">-8</integer>
+    <integer name="config_burnInProtectionMaxHorizontalOffset">8</integer>
+    <integer name="config_burnInProtectionMinVerticalOffset">-8</integer>
+    <integer name="config_burnInProtectionMaxVerticalOffset">8</integer>
 
     <string name="config_dozeComponent" translatable="false">com.android.systemui/com.android.systemui.doze.DozeService</string>
 </resources>
