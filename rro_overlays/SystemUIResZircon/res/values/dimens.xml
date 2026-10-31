@@ -3,4 +3,6 @@
     <dimen name="pixel_pitch" format="float">48.28</dimen>
 
     <bool name="doze_display_state_supported">true</bool>
+
+    <dimen name="keyguard_indication_margin_bottom">144dp</dimen>
 </resources>
