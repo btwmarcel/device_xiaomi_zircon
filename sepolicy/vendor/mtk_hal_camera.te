@@ -1,0 +1,13 @@
+r_dir_file(mtk_hal_camera, sysfs_therm)
+
+type vendor_camera_data_file, file_type, data_file_type;
+allow mtk_hal_camera vendor_camera_data_file:dir rw_dir_perms;
+allow mtk_hal_camera vendor_camera_data_file:file create_file_perms;
+get_prop(mtk_hal_camera, hwservicemanager_prop)
+
+set_prop(mtk_hal_camera, vendor_mtk_camera_prop)
+allow mtk_hal_camera persist_data_file:dir r_dir_perms;
+allow mtk_hal_camera proc_pressure_mem:file { getattr open read write };
+allow mtk_hal_camera sysfs_therm:file { getattr open read write };
+dontaudit mtk_hal_camera default_prop:file r_file_perms;
+dontaudit mtk_hal_camera default_android_hwservice:hwservice_manager find;

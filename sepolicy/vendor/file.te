@@ -1,0 +1,2 @@
+type vendor_sysfs_displayfeature, fs_type, sysfs_type;
+type sysfs_re25_calib, fs_type, sysfs_type;

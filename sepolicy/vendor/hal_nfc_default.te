@@ -1,0 +1,4 @@
+allow hal_nfc_default sysfs:file { getattr open read };
+
+allow nfc nfc_data_vendor_file:dir search;
+add_hwservice(hal_nfc_default, tmsnfc_hwservice)

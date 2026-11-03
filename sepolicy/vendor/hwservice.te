@@ -1,0 +1,30 @@
+type vendor_hal_fingerprint_hwservice, hwservice_manager_type;
+
+type hal_mtdservice_hwservice, hwservice_manager_type;
+type hal_mlipay_hwservice, hwservice_manager_type;
+type hal_tidaservice_hwservice, hwservice_manager_type;
+type hal_otrpagent_hwservice, hwservice_manager_type;
+type hal_videoservice_hwservice, hwservice_manager_type;
+type hal_cit_wifi_hwservice, hwservice_manager_type;
+type vendor_hal_sensorcommunicate_hwservice, hwservice_manager_type;
+type vendor_hal_citsensorservice_xiaomi_hwservice, hwservice_manager_type;
+type vendor_hal_displayfeature_xiaomi_hwservice, hwservice_manager_type;
+type hal_dms_hwservice, hwservice_manager_type;
+
+type hal_mikeybag_service, service_manager_type;
+
+attribute xiaomi_hwservice;
+typeattribute hal_mtdservice_hwservice xiaomi_hwservice;
+typeattribute hal_mlipay_hwservice xiaomi_hwservice;
+typeattribute hal_tidaservice_hwservice xiaomi_hwservice;
+typeattribute hal_otrpagent_hwservice xiaomi_hwservice;
+typeattribute hal_videoservice_hwservice xiaomi_hwservice;
+typeattribute hal_cit_wifi_hwservice xiaomi_hwservice;
+typeattribute vendor_hal_sensorcommunicate_hwservice xiaomi_hwservice;
+typeattribute vendor_hal_citsensorservice_xiaomi_hwservice xiaomi_hwservice;
+typeattribute vendor_hal_displayfeature_xiaomi_hwservice xiaomi_hwservice;
+typeattribute hal_dms_hwservice xiaomi_hwservice;
+
+allow { system_server system_app platform_app priv_app } xiaomi_hwservice:hwservice_manager find;
+allow { system_server system_app platform_app priv_app } hal_mikeybag_service:service_manager find;
+type tmsnfc_hwservice, hwservice_manager_type;

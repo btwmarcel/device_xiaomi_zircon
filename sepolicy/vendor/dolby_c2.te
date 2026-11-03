@@ -1,0 +1,15 @@
+type vendor_dolby_c2, domain;
+type vendor_dolby_c2_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_dolby_c2)
+
+hal_server_domain(vendor_dolby_c2, hal_codec2)
+hal_client_domain(vendor_dolby_c2, hal_allocator)
+hal_client_domain(vendor_dolby_c2, hal_graphics_allocator)
+
+vndbinder_use(vendor_dolby_c2)
+
+allow vendor_dolby_c2 dmabuf_system_heap_device:chr_file r_file_perms;
+allow vendor_dolby_c2 same_process_hal_file:file { execute read open getattr map };
+allow vendor_dolby_c2 gpu_device:chr_file rw_file_perms;
+allow vendor_dolby_c2 ion_device:chr_file rw_file_perms;

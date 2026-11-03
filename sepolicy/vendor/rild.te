@@ -1,0 +1,4 @@
+allow rild gsi_metadata_file:dir search;
+set_prop(rild, vendor_sno_prop)
+set_prop(rild, vendor_deviceid_prop)
+dontaudit rild default_prop:file r_file_perms;

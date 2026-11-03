@@ -1,0 +1,7 @@
+binder_call(hal_sensors_default, hal_audio_default)
+r_dir_file(hal_audio_default, persist_data_file)
+get_prop(hal_audio_default, hwservicemanager_prop)
+set_prop(hal_audio_default, log_tag_prop)
+dontaudit hal_audio_default default_prop:file r_file_perms;
+allow hal_audio_default hf_manager_device:chr_file rw_file_perms;
+rw_dir_file(hal_audio_default, sysfs_re25_calib)

@@ -1,0 +1,12 @@
+vendor.xiaomi.hardware.fx.tunnel::IMiFxTunnel    u:object_r:vendor_hal_fingerprint_hwservice:s0
+vendor.xiaomi.hardware.mtdservice::IMTService    u:object_r:hal_mtdservice_hwservice:s0
+vendor.xiaomi.hardware.mlipay::IMlipayService    u:object_r:hal_mlipay_hwservice:s0
+vendor.xiaomi.hardware.tidaservice::ITidaService u:object_r:hal_tidaservice_hwservice:s0
+vendor.xiaomi.hardware.otrpagent::IOTrPAgent     u:object_r:hal_otrpagent_hwservice:s0
+vendor.xiaomi.sensor.communicate::ISensorCommunicate u:object_r:vendor_hal_sensorcommunicate_hwservice:s0
+vendor.xiaomi.sensor.citsensorservice::ICitSensorService u:object_r:vendor_hal_citsensorservice_xiaomi_hwservice:s0
+vendor.xiaomi.hardware.videoservice::IVideoService u:object_r:hal_videoservice_hwservice:s0
+vendor.xiaomi.cit.wifi::IWifiService             u:object_r:hal_cit_wifi_hwservice:s0
+vendor.dolby.hardware.dms::IDms                  u:object_r:hal_dms_hwservice:s0
+vendor.xiaomi.hardware.displayfeature::IDisplayFeature u:object_r:vendor_hal_displayfeature_xiaomi_hwservice:s0
+vendor.tms.tmsnfc::ITmsNfc u:object_r:tmsnfc_hwservice:s0

@@ -1,0 +1,8 @@
+/(odm|vendor/odm)/bin/hw/vendor\.xiaomi\.hardware\.vibratorfeature\.service    u:object_r:vendor_vibratorfeature_exec:s0
+/(odm|vendor/odm)/bin/hw/android\.hardware\.vibrator-service\.alias           u:object_r:hal_vibrator_default_exec:s0
+/(odm|vendor/odm)/bin/hw/vendor\.xiaomi\.sensor\.citsensorservice@2\.0-service u:object_r:vendor_citsensor_exec:s0
+/(odm|vendor/odm)/bin/hw/android\.hardware\.nfc@1\.2-service-tms               u:object_r:hal_nfc_default_exec:s0
+/(odm|vendor/odm)/bin/mtd_mitee(@[0-9.]+)?                                     u:object_r:hal_mtdservice_default_exec:s0
+/(odm|vendor/odm)/bin/mlipayd_mitee(@[0-9.]+)?                                 u:object_r:hal_mlipay_default_exec:s0
+/(odm|vendor/odm)/bin/tidad_mitee(@[0-9.]+)?                                   u:object_r:hal_tidaservice_default_exec:s0
+/(odm|vendor/odm)/bin/vendor\.xiaomi\.hardware\.mikeybag-service               u:object_r:hal_mikeybag_default_exec:s0

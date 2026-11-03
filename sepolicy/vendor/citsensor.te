@@ -1,0 +1,30 @@
+type vendor_citsensor, domain;
+type vendor_citsensor_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_citsensor)
+
+binder_call(vendor_citsensor, hal_graphics_composer_default)
+binder_call(hal_graphics_composer_default, vendor_citsensor)
+
+binder_call(system_server, vendor_citsensor)
+
+hal_client_domain(vendor_citsensor, hal_graphics_allocator)
+
+add_hwservice(vendor_citsensor, vendor_hal_citsensorservice_xiaomi_hwservice)
+allow hal_graphics_composer_default vendor_hal_citsensorservice_xiaomi_hwservice:hwservice_manager find;
+allow vendor_citsensor fwk_sensor_hwservice:hwservice_manager find;
+
+allow vendor_citsensor hf_manager_device:chr_file rw_file_perms;
+allow vendor_citsensor mnt_vendor_file:dir search;
+allow vendor_citsensor nvcfg_file:dir r_dir_perms;
+allow vendor_citsensor nvcfg_file:file { getattr open read watch watch_reads };
+allow vendor_citsensor persist_data_file:dir r_dir_perms;
+allow vendor_citsensor persist_data_file:file { getattr open read write };
+allow vendor_citsensor sysfs:file { getattr open read };
+allow vendor_citsensor sysfs_leds:dir r_dir_perms;
+allow vendor_citsensor sysfs_leds:file { getattr open read };
+
+set_prop(vendor_citsensor, vendor_mtk_sensor_prop)
+get_prop(vendor_citsensor, hwservicemanager_prop)
+hal_client_domain(vendor_citsensor, hal_graphics_composer)
+allow vendor_citsensor vendor_sysfs_displayfeature:dir r_dir_perms;
+allow vendor_citsensor vendor_sysfs_displayfeature:file r_file_perms;

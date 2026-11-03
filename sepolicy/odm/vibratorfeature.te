@@ -1,0 +1,14 @@
+type vendor_vibratorfeature, domain;
+type vendor_vibratorfeature_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_vibratorfeature)
+
+hal_server_domain(vendor_vibratorfeature, hal_vibrator)
+
+binder_call(system_server, vendor_vibratorfeature)
+binder_call(vendor_vibratorfeature, servicemanager)
+
+allow vendor_vibratorfeature input_device:dir r_dir_perms;
+allow vendor_vibratorfeature input_device:chr_file rw_file_perms;
+allowxperm vendor_vibratorfeature input_device:chr_file ioctl { 0x4506 0x4535 0x4580 0x4581 };
+allow vendor_vibratorfeature sysfs:file { getattr open read write };
+get_prop(vendor_vibratorfeature, hwservicemanager_prop)

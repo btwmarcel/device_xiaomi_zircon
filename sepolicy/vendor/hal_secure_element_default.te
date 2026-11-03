@@ -1,0 +1,1 @@
+allow hal_secure_element_default sysfs:file { getattr open read };

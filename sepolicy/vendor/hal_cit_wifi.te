@@ -1,0 +1,14 @@
+type hal_cit_wifi_default, domain;
+type hal_cit_wifi_default_exec, exec_type, vendor_file_type, file_type;
+type hal_cit_wifi_sub, domain;
+init_daemon_domain(hal_cit_wifi_default)
+
+allow hal_cit_wifi_default same_process_hal_file:file { execute read open getattr map };
+binder_call(hal_cit_wifi_default, servicemanager)
+binder_call(hal_cit_wifi_default, hwservicemanager)
+add_hwservice(hal_cit_wifi_default, hal_cit_wifi_hwservice);
+allow hal_cit_wifi_default vendor_shell_exec:file { read getattr map execute open };
+allow hal_cit_wifi_default hal_cit_wifi_sub:process { transition siginh rlimitinh };
+dontaudit hal_cit_wifi_default hal_cit_wifi_sub:process noatsecure;
+type_transition hal_cit_wifi_default vendor_shell_exec:process hal_cit_wifi_sub;
+get_prop(hal_cit_wifi_default, hwservicemanager_prop)
