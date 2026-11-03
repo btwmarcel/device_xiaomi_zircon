@@ -23,7 +23,7 @@ int main() {
 
     binder_status_t status = AServiceManager_addService(vibrator, target);
     CHECK_EQ(status, STATUS_OK) << "Failed to register " << target << ": " << status;
-    LOG(INFO) << "Registered " << target << " as an alias of " << target;
+    LOG(INFO) << "Registered " << target << " as an alias of " << source;
 
     return EXIT_SUCCESS;
 }

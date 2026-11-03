@@ -6,3 +6,6 @@ service vendor.vibrator-alias /odm/bin/hw/android.hardware.vibrator-service.alia
 
 on property:init.svc.vibratorfeature-hal-service=restarting
     start vendor.vibrator-alias
+
+on property:init.svc.vibratorfeature-hal-service=running
+    start vendor.vibrator-alias
