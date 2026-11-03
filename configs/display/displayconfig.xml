@@ -28,11 +28,11 @@
         <sdrHdrRatioMap>
             <point>
                 <sdrNits>2.0</sdrNits>
-                <hdrRatio>8.0</hdrRatio>
+                <hdrRatio>1.0</hdrRatio>
             </point>
             <point>
-                <sdrNits>1200.0</sdrNits>
-                <hdrRatio>8.0</hdrRatio>
+                <sdrNits>490.0</sdrNits>
+                <hdrRatio>1.0</hdrRatio>
             </point>
         </sdrHdrRatioMap>
     </highBrightnessMode>
