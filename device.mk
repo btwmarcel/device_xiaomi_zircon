@@ -162,7 +162,6 @@ PRODUCT_PACKAGES += \
     init.aee.rc \
     init.batterysecret.rc \
     init.cgroup.rc \
-    init.charge_logger.rc \
     init.connectivity.common.rc \
     init.connectivity.rc \
     init.mi_thermald.rc \

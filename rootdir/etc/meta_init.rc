@@ -242,7 +242,6 @@ on encrypt
 on property:vendor.crypto.fake_encrypt=1 && property:vold.post_fs_data_done=1
     trigger load_persist_props_action
     # setprop ro.crypto.state unencrypted
-    setprop vendor.soter.teei.crypto.state unencrypted
     exec_start update_verifier
     class_start main
     class_start late_start

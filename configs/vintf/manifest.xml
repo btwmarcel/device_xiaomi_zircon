@@ -246,11 +246,6 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::ISlaService/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.mfidoca</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IFidoService/default</fqname>
-    </hal>
     <hal format="aidl">
         <name>vendor.xiaomi.hardware.mikeybag</name>
         <fqname>IMiKeyBagService/default</fqname>
@@ -264,47 +259,15 @@
         <transport>hwbinder</transport>
         <fqname>@1.1::IMlipayService/default</fqname>
     </hal>
-    <hal format="aidl">
-        <name>vendor.xiaomi.hardware.mrm</name>
-        <fqname>IMrm/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>vendor.xiaomi.hardware.mrm</name>
-        <fqname>IMiCertificate/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>vendor.xiaomi.hardware.mrm</name>
-        <fqname>IMrmRemoteAuth/default</fqname>
-    </hal>
     <hal format="hidl">
         <name>vendor.xiaomi.hardware.mtdservice</name>
         <transport>hwbinder</transport>
         <fqname>@1.3::IMTService/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.xiaomi.hardware.soterservice</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::ISoter/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.xiaomi.hardware.tidaservice</name>
         <transport>hwbinder</transport>
         <fqname>@1.2::ITidaService/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.vsimapp</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IVSIMService/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hidl.minet</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IMiNetService/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hidl.miwill</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IMiwillService/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.secure_element</name>

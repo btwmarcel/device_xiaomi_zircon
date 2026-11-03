@@ -145,9 +145,6 @@ telephony.lteOnCdmaDevice=1
 # Sensors
 persist.vendor.sensor.mischeck=true
 
-# Touch (Xiaomi)
-ro.vendor.touchfeature.type=183
-
 # Wi-Fi
 ro.hardware.wlan.chip=mt663x
 ro.hardware.wlan.dbs=1
