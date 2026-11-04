@@ -156,15 +156,6 @@ AUDIO_CAMERA_GAIN=true
 AUDIO_FEATURE_REVERSE_MIC_DIRECTION_SUPPORT=true
 AUDIO_MI_SPEECH=true
 apexd.config.dm_create.timeout=10000
-dalvik.vm.dex2oat64.enabled=true
-dalvik.vm.finalizer-timeout-ms=40000
-dalvik.vm.heapgrowthlimit=256m
-dalvik.vm.heapmaxfree=8m
-dalvik.vm.heapminfree=512k
-dalvik.vm.heapsize=512m
-dalvik.vm.heapstartsize=8m
-dalvik.vm.heaptargetutilization=0.75
-dalvik.vm.mtk-stack-trace-file=/data/anr/mtk_traces.txt
 debug.config.media.video.dolby_vision_suports=true
 debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1
@@ -725,12 +716,20 @@ vendor.mtk.vdec.decode.error.handle.mode=1
 vendor.mtk.vdec.waitkeyframeforplay=9
 
 # USB
-
 vendor.usb.controller=11201000.usb0
 vendor.usb.vid=0x2717
 
 # UDFPS
-
 persist.vendor.fingerprint.type=udfps_optical
 persist.vendor.fingerprint.sensor_location=609|2437|105
 ro.vendor.sensors.xiaomi.udfps=true
+
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.finalizer-timeout-ms=40000
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapmaxfree=48m
+dalvik.vm.heapminfree=8m
+dalvik.vm.heapsize=512m
+dalvik.vm.heapstartsize=24m
+dalvik.vm.heaptargetutilization=0.46
