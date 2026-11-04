@@ -13,3 +13,4 @@ allow vendor_hal_sensorcommunicate_default vendor_hal_citsensorservice_xiaomi_hw
 set_prop(vendor_hal_sensorcommunicate_default, vendor_goodix_cct_prop);
 get_prop(vendor_hal_sensorcommunicate_default, vendor_default_prop);
 get_prop(vendor_hal_sensorcommunicate_default, hwservicemanager_prop)
+allow hwservicemanager vendor_hal_sensorcommunicate_default:binder call;

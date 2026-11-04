@@ -1,1 +1,4 @@
 set_prop(vendor_init, vendor_deviceid_prop)
+set_prop(vendor_init, vendor_mtk_audio_prop)
+set_prop(vendor_init, system_prop)
+set_prop(vendor_init, audio_prop)

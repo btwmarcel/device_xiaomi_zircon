@@ -11,3 +11,4 @@ allow mtk_hal_camera proc_pressure_mem:file { getattr open read write };
 allow mtk_hal_camera sysfs_therm:file { getattr open read write };
 dontaudit mtk_hal_camera default_prop:file r_file_perms;
 dontaudit mtk_hal_camera default_android_hwservice:hwservice_manager find;
+allow mtk_hal_camera persist_data_file:file r_file_perms;
