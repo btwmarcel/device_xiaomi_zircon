@@ -23,7 +23,7 @@ bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=true
 
 # Camera
-vendor.camera.aux.packagelist=com.xiaomi.cameratest,com.xiaomi.factory.mmi,com.xiaomi.runin
+vendor.camera.aux.packagelist=com.xiaomi.cameratest,com.xiaomi.factory.mmi,com.xiaomi.runin,org.lineageos.aperture
 
 # Display
 debug.sf.predict_hwc_composition_strategy=0
@@ -165,4 +165,3 @@ vendor.af.threshold.src_and_effect_count=5
 vendor.mtk_thumbnail_optimization=true
 vendor.rild.libargs=-d /dev/ttyC0
 vendor.rild.libpath=mtk-ril.so
-
