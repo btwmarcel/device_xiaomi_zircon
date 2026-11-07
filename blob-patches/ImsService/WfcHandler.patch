@@ -1,0 +1,22 @@
+--- a/smali/com/mediatek/wfo/impl/WfcHandler.smali
++++ b/smali/com/mediatek/wfo/impl/WfcHandler.smali
+@@ -3304,7 +3304,7 @@
+ .end method
+ 
+ .method private registerForBroadcast()V
+-    .locals 3
++    .locals 4
+ 
+     .line 580
+     new-instance v0, Landroid/content/IntentFilter;
+@@ -3342,7 +3342,9 @@
+ 
+     iget-object v2, p0, Lcom/mediatek/wfo/impl/WfcHandler;->mReceiver:Landroid/content/BroadcastReceiver;
+ 
+-    invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
++    const/4 v3, 0x2
++
++    invoke-virtual {v1, v2, v0, v3}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)Landroid/content/Intent;
+ 
+     .line 592
+     return-void

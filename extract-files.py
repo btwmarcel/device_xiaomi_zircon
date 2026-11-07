@@ -111,7 +111,7 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lock')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
-    
+
     'vendor/lib64/libMiPhotoFilter.so': blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
@@ -153,6 +153,22 @@ blob_fixups: blob_fixups_user_type = {
 
     'vendor/bin/hw/mtkfusionrild': blob_fixup()
         .add_needed('libutils-v33.so'),
+
+    'system_ext/lib64/libimsma.so': blob_fixup()
+        .replace_needed('libsink.so', 'libsink-mtk.so'),
+
+    'system_ext/lib64/libsink-mtk.so': blob_fixup()
+        .add_needed('libaudioclient_shim.so'),
+
+    (
+        'system_ext/lib64/libdolbyacse_jni.so',
+        'system_ext/lib64/libmtk_vt_service.so',
+        'system_ext/lib64/libmtk_vt_wrapper.so',
+    ): blob_fixup()
+        .replace_needed('libnativehelper.so', 'libnativehelper_shim.so'),
+
+    'system_ext/priv-app/ImsService/ImsService.apk': blob_fixup()
+        .apktool_patch('blob-patches/ImsService/'),
 }
 
 module = ExtractUtilsModule(

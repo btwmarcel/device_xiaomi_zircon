@@ -75,7 +75,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-V2-ndk.vendor \
     libaudiofoundation.vendor \
     libhidltransport.vendor \
-    libhwbinder.vendor
+    libhidltransport \
+    libhwbinder.vendor \
+    libhwbinder
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -114,6 +116,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-resources-v34.vendor \
     libbase_shim \
+    libnativehelper_shim \
     libprocessgroup_shim \
     libstagefright_foundation-v33 \
     libtinyxml2-v34 \
@@ -308,6 +311,12 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek \
     hardware/xiaomi
+
+$(call inherit-product, hardware/lineage/compat/frameworks/compat.mk)
+$(call inherit-product, hardware/mediatek/frameworks/mediatek-frameworks.mk)
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/zircon/zircon-vendor.mk)
