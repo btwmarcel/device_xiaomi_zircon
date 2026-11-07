@@ -1,3 +1,8 @@
+#
+# Copyright (C) 2026 btwmarcel
+# SPDX-License-Identifier: Apache-2.0
+#
+
 service vendor.vibrator-alias /odm/bin/hw/android.hardware.vibrator-service.alias
     class hal
     user system
