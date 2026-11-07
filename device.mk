@@ -107,6 +107,7 @@ $(call soong_config_set,power_libperfmgr,mode_extension_lib,//$(LOCAL_PATH):libp
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
@@ -147,6 +148,8 @@ PRODUCT_PACKAGES += \
     FrameworksResZircon \
     SettingsResZircon \
     SystemUIResZircon
+
+PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
