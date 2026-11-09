@@ -1,0 +1,13 @@
+--- a/AndroidManifest.xml
++++ b/AndroidManifest.xml
+@@ -54,6 +54,10 @@
+     <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:directBootAware="true" android:extractNativeLibs="false" android:label="ImsApp" android:name="com.mediatek.ims.ImsApp" android:persistent="true" android:usesNonSdkApi="true">
+         <uses-library android:name="com.mediatek.ims.oemplugin" android:required="false"/>
+         <uses-library android:name="com.mediatek.ims.plugin" android:required="false"/>
++        <uses-library android:name="mediatek-ims-base" android:required="true"/>
++        <uses-library android:name="mediatek-ims-common" android:required="true"/>
++        <uses-library android:name="mediatek-telephony-base" android:required="true"/>
++        <uses-library android:name="mediatek-carrier-config-manager" android:required="true"/>
+         <service android:exported="true" android:name="com.mediatek.ims.MtkDynamicImsService" android:permission="android.permission.BIND_IMS_SERVICE">
+             <meta-data android:name="android.telephony.ims.RCS_FEATURE" android:value="true"/>
+             <meta-data android:name="android.telephony.ims.MMTEL_FEATURE" android:value="true"/>

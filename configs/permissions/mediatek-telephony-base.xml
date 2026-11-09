@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library
+        name="mediatek-telephony-base"
+        file="/system_ext/framework/mediatek-telephony-base.jar"
+    />
+</permissions>
