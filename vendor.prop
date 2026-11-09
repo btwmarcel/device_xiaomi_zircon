@@ -99,7 +99,7 @@ debug.sf.late.sf.duration.120=12300000
 debug.sf.late.sf.duration.90=16100000
 debug.sf.late.sf.duration.60=15600000
 debug.renderengine.backend=skiaglthreaded
-ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.surface_flinger.use_content_detection_for_refresh_rate=false
 
 ro.hardware.egl=meow
 ro.hardware.vulkan=mali
