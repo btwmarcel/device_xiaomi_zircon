@@ -9,5 +9,7 @@
 
     <bool name="doze_display_state_supported">true</bool>
 
+    <bool name="doze_suspend_display_state_supported">true</bool>
+
     <dimen name="keyguard_indication_margin_bottom">144dp</dimen>
 </resources>
