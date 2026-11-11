@@ -154,7 +154,8 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     FrameworksResZircon \
     SettingsResZircon \
-    SystemUIResZircon
+    SystemUIResZircon \
+    WifiResZircon
 
 PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 

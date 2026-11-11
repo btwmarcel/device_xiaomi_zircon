@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 The LineageOS Project
+     Copyright (C) 2026 btwmarcel
+
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <bool translatable="false" name="config_wifi5ghzSupport">true</bool>
+    <bool translatable="false" name="config_wifi6ghzSupport">true</bool>
+    <bool translatable="false" name="config_wifiDppAkmSupported">true</bool>
+    <bool translatable="false" name="config_wifiSaeH2eSupported">true</bool>
+    <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
+    <bool translatable="false" name="config_wifi_connected_mac_randomization_supported">true</bool>
+    <bool translatable="false" name="config_wifi_p2p_mac_randomization_supported">true</bool>
+    <bool translatable="false" name="config_wifi_fast_bss_transition_enabled">true</bool>
+    <integer translatable="false" name="config_wifiDelayDisconnectOnImsLostMs">1000</integer>
+    <string translatable="false" name="config_wifi_tcp_buffers">1730560,3461120,6922240,524288,1048576,4525824</string>
+
+    <bool translatable="false" name="config_wifi_softap_acs_supported">true</bool>
+    <bool translatable="false" name="config_wifi_softap_ieee80211ac_supported">true</bool>
+    <bool translatable="false" name="config_wifiSoftapIeee80211axSupported">true</bool>
+    <bool translatable="false" name="config_wifi_softap_sae_supported">true</bool>
+    <bool translatable="false" name="config_wifiSoftap6ghzSupported">true</bool>
+    <bool translatable="false" name="config_wifiSoftapAutoUpgradeToBridgedConfigWhenSupported">false</bool>
+    <string translatable="false" name="config_wifiSoftap2gChannelList">1-13</string>
+    <string translatable="false" name="config_wifiSoftap5gChannelList">36,38,40,42,44,46,48,149,153,157,161,165</string>
+    <string translatable="false" name="config_wifiSoftap6gChannelList">5,21,37,53,69,85,101,117,133,149,165,181,197,213,229</string>
+</resources>
