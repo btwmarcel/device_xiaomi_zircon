@@ -76,4 +76,6 @@
         <item>255</item>
         <item>255</item>
     </integer-array>
+
+    <string name="config_dozeUdfpsLongPressSensorType" translatable="false">org.lineageos.sensor.udfps</string>
 </resources>
