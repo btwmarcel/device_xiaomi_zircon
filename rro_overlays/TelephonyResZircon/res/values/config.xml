@@ -1,0 +1,4 @@
+<resources>
+    <string name="config_ims_mmtel_package" translatable="false">com.mediatek.ims</string>
+    <bool name="config_support_rtt">true</bool>
+</resources>

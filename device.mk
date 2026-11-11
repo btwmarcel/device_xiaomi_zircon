@@ -156,7 +156,8 @@ PRODUCT_PACKAGES += \
     FrameworksResZircon \
     SettingsResZircon \
     SystemUIResZircon \
-    WifiResZircon
+    WifiResZircon \
+    TelephonyResZircon
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
