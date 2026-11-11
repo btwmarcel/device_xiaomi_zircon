@@ -135,6 +135,9 @@ on boot
     chmod 0664 /sys/class/mi_display/disp-DSI-0/disp_count
     chown system system /sys/class/mi_display/disp-DSI-0/brightness_clone
     chmod 0664 /sys/class/mi_display/disp-DSI-0/brightness_clone
+    # Xiaomi touch
+    chown system system /sys/class/touch/touch_dev/fod_longpress_gesture_enabled
+    chmod 0660 /sys/class/touch/touch_dev/fod_longpress_gesture_enabled
     # camera flash led
     chown system system /sys/class/leds/zircon_torch0/brightness
     chown system system /sys/class/leds/zircon_torch1/brightness
