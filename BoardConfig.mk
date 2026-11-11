@@ -23,7 +23,7 @@ AB_OTA_PARTITIONS += \
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_ABI2 := 
+TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a55
 TARGET_CPU_VARIANT_RUNTIME := cortex-a55
 
@@ -56,21 +56,56 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION) \
 BOARD_KERNEL_BASE := 0x3fff8000
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_PAGESIZE := 4096
-BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := zircon_defconfig
+TARGET_KERNEL_CONFIG := \
+    gki_defconfig \
+    vendor/mgk_64_k515.config \
+    vendor/xiaomi_mgk.config \
+    vendor/lineage_mgk.config \
+    vendor/zircon.config
+TARGET_KERNEL_DTB := \
+    mediatek/mt6886.dtb
 TARGET_KERNEL_SOURCE := kernel/xiaomi/zircon
+TARGET_KERNEL_CLANG_VERSION := r547379
+
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/zircon-modules
+
+TARGET_KERNEL_EXT_MODULES := \
+    connectivity/bt/mt66xx/btif \
+    connectivity/common \
+    connectivity/connfem \
+    connectivity/conninfra \
+    connectivity/fmradio \
+    connectivity/gps/data_link/plat/v051 \
+    connectivity/gps/gps_pwr \
+    connectivity/gps/gps_scp \
+    connectivity/wlan/adaptor \
+    connectivity/wlan/core/gen4m \
+    gpu
+
+VENDOR_RAMDISK_MODULES := $(shell cat $(DEVICE_PATH)/prebuilts/modules.load)
+VENDOR_RAMDISK_RECOVERY_MODULES := $(shell cat $(DEVICE_PATH)/prebuilts/modules.load.recovery)
+
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(VENDOR_RAMDISK_MODULES)
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(VENDOR_RAMDISK_RECOVERY_MODULES)
+
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(shell cat $(DEVICE_PATH)/prebuilts/vendor_dlkm_modules/modules.load)
+
+BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD) $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
+
+TARGET_AUTO_COLLECT_KERNEL_MODULE_DEPS := true
 
 # Kernel - prebuilt
-TARGET_FORCE_PREBUILT_KERNEL := true
+# TARGET_FORCE_PREBUILT_KERNEL := true
 ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
-BOARD_INCLUDE_DTB_IN_BOOTIMG := 
+BOARD_INCLUDE_DTB_IN_BOOTIMG :=
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
-BOARD_KERNEL_SEPARATED_DTBO := 
+BOARD_KERNEL_SEPARATED_DTBO :=
 endif
 
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
@@ -109,7 +144,7 @@ TARGET_COPY_OUT_ODM_DLKM    := odm_dlkm
 TARGET_COPY_OUT_VENDOR      := vendor
 TARGET_COPY_OUT_PRODUCT     := product
 TARGET_COPY_OUT_SYSTEM      := system
-TARGET_COPY_OUT_SYSTEM_EXT      := system_ext
+TARGET_COPY_OUT_SYSTEM_EXT  := system_ext
 TARGET_COPY_OUT_ODM         := odm
 
 
@@ -134,19 +169,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6886
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-
-MODULES := $(DEVICE_PATH)/prebuilts/modules
-
-VENDOR_RAMDISK_MODULES := $(shell cat $(DEVICE_PATH)/prebuilts/modules.load)
-VENDOR_RAMDISK_RECOVERY_MODULES := $(shell cat $(DEVICE_PATH)/prebuilts/modules.load.recovery)
-
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES := \
-    $(addprefix $(MODULES)/,$(sort $(VENDOR_RAMDISK_MODULES) $(VENDOR_RAMDISK_RECOVERY_MODULES)))
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(VENDOR_RAMDISK_MODULES)
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(VENDOR_RAMDISK_RECOVERY_MODULES)
-
-BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(MODULES)/*.ko)
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(shell cat $(DEVICE_PATH)/prebuilts/vendor_dlkm_modules/modules.load)
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2026-08-01
