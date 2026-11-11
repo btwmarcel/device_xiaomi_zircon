@@ -26,3 +26,5 @@ genfscon sysfs /devices/platform/soc/11e81000.i2c/i2c-7/7-0065/power_supply/cp_s
 genfscon sysfs /devices/platform/soc/11011000.spi1/spi_master/spi1/spi1.0/goodix_fp/goodix_fp/wakeup176 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:chg/power_supply/11280000.i2c:mt6375@34:chg/wakeup29 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /class/smartpa/re25_calib u:object_r:sysfs_re25_calib:s0
+
+genfscon sysfs /devices/virtual/touch/touch_dev u:object_r:vendor_sysfs_touch:s0

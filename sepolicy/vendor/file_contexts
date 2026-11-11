@@ -15,3 +15,4 @@
 /data/vendor/camera(/.*)?                                                                           u:object_r:vendor_camera_data_file:s0
 /dev/elliptic0                                                                                      u:object_r:vendor_elliptic_device:s0
 /dev/disp_feature                                                                                   u:object_r:vendor_displayfeature_device:s0
+/dev/xiaomi-touch                                                                                   u:object_r:vendor_xiaomi_touch_device:s0
