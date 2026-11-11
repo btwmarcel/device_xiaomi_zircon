@@ -1442,7 +1442,6 @@ vendor/lib64/sensors.touch.detect.so
 # Sensors configs
 odm/etc/sensors/lightSensorCali.json
 odm/etc/sensors/lightSensorConfig.json
-vendor/etc/sensors/hals.conf
 
 # Soundtrigger
 vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so
