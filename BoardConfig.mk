@@ -203,7 +203,7 @@ WIFI_HAL_INTERFACE_COMBINATIONS += ,{{{STA}, 1}, {{NAN}, 1}}
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
-# SEpolioy
+# SEPolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_ODM_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/odm
